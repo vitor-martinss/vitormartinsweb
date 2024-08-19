@@ -4,10 +4,8 @@ import HeaderThree from '@/layouts/headers/HeaderThree';
 import HeroAreaHomeThree from './HeroAreaHomeThree';
 import ServiceAreaHomeThree from './ServiceAreaHomeThree';
 import ProjectAreaHomeThree from './ProjectAreaHomeThree';
-import BlogAreaHomeThree from './BlogAreaHomeThree';
-import FooterThree from '@/layouts/footers/FooterThree';
-import ServiceAreaHomeOne from '../home/ServiceAreaHomeOne';
-import SkillAreaHomeOne from '../home/SkillAreaHomeOne';
+import ServiceAreaHomeOne from './ServiceAreaHomeOne';
+import SkillAreaHomeOne from './SkillAreaHomeOne';
 import FooterOne from '@/layouts/footers/FooterOne';
 
 const HomeVitor = () => {
@@ -20,13 +18,9 @@ const HomeVitor = () => {
           <main>
             <HeroAreaHomeThree />
             <ServiceAreaHomeOne />
-
             <ServiceAreaHomeThree />
-
             <ProjectAreaHomeThree />
             <SkillAreaHomeOne />
-
-
           </main>
           <FooterOne />
         </div>

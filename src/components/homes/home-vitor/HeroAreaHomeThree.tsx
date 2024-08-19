@@ -78,25 +78,15 @@ const HeroAreaHomeThree = () => {
             <div className="col-xl-12">
               <div className="tp-hero-3__content">
                 <h3 className="tp-hero-3__title tp-char-animation">
-                  Creative{" "}
-                  <span>
-                    <video
-                      id="myVideo"
-                      autoPlay
-                      loop
-                      playsInline
-                      muted
-                      src="https://template.wphix.com/video/diego-video.mp4"
-                    >
-                    </video>
-                  </span> <br />
-                  Visual Designer
+                  Front-end{" "}
+                  <br />
+                  Web Developer
                 </h3>
               </div>
               <div className="tp-hero-3__btn-box tp_wrap_anim d-flex align-items-center justify-content-start justify-content-md-center">
                 <div className="tp-btn-bounce-3">
-                  <Link className="tp-btn-blue" href="/portfolio">
-                    <span className="text"> View Our Work</span>
+                  <Link className="tp-btn-blue d-flex" href="/portfolio">
+                    <span className="text text-nowrap">View My Work</span>
 
                     <span className="icon">
                       <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -107,7 +97,7 @@ const HeroAreaHomeThree = () => {
 
                   </Link>
                 </div>
-                <p >Hello, I am Diego a designer from Barcelona. Specialised <br /> in creating fantastic digital experiences.!</p>
+                <p >Hello, I am Vitor Martins a front-end web developer based in Lisbon.<br /> Specialised in creating digital experiences!</p>
               </div>
             </div>
           </div>

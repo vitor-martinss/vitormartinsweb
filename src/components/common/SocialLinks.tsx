@@ -54,23 +54,18 @@ interface HDataType {
 const hero_link_home_three: HDataType[] = [
   {
     id: 1,
-    link: "https://www.facebook.com",
-    title: "Facebook",
+    link: "https://github.com/vitor-martinss",
+    title: "GitHub",
   },
   {
     id: 2,
-    link: "https://www.twitter.com",
-    title: "Twitter",
+    link: "https://www.linkedin.com/in/vitor-martinss/",
+    title: "Linkedin",
   },
   {
     id: 3,
-    link: "https://www.dribble.com",
-    title: "Dribble",
-  },
-  {
-    id: 4,
-    link: "https://www.instagram.com",
-    title: "Instagram",
+    link: "info@bigspinlab.com",
+    title: "Email",
   }
 ]
 export const HeroSocialLinksHomeThree = () => {
@@ -98,7 +93,7 @@ type copy_right_text_type = {
 
 const copy_right_text: copy_right_text_type = {
   copy_right: <>
-    © {new Date().getFullYear()}  Diego, All Rights Reserved • <span>Credits</span>
+    © {new Date().getFullYear()}  Vitor Martins, All Rights Reserved • <span>Credits</span>
   </>,
   copy_rigth_2: `Themepure © ${new Date().getFullYear()}. All rights reserved.`
 }

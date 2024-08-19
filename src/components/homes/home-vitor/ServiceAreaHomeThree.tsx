@@ -27,34 +27,42 @@ interface DataType {
 
 
 const service_content: DataType = {
-  subtitle: "OUR PROCESS",
-  title: <>How We <br /> Carry Out Our Projects</>,
-  sm_info: <>We offer a range of services to help elevate <br /> your brand & drive results.</>,
+  subtitle: "MY PROCESS",
+  title: <>How I <br /> Carry Out My Projects</>,
+  sm_info: <>I offer a range of services to enhance your website and achieve your goals.</>,
   btn_text: <>Call me to get more extra service <span>Call Now</span></>,
   service_data: [
     {
       id: 1,
       icon: <StrategyIcno />,
-      title: <>Design <br /> Strategy</>,
-      sm_des: <>We always ensure that it combines a clean <br /> and beautiful visual design.</>,
-      tag_1: "UI/UX Audit",
-      tag_2: "Workshops",
-    },
-    {
-      id: 2,
-      icon: <LeadershipIcon />,
-      title: <>Product <br /> Leadership</>,
-      sm_des: <>We always ensure that it combines a clean <br /> and beautiful visual design.</>,
-      tag_1: "UI/UX Audit",
-      tag_2: "Workshops",
+      title: <>Planning</>,
+      sm_des: <>I create a detailed project plan, defining goals, timelines, and best practices for a successful execution.</>,
+      tag_1: "Project Goals",
+      tag_2: "Timeline & Milestones",
     },
     {
       id: 2,
       icon: <DevelopmentIcon />,
-      title: <>Front-End <br /> Development</>,
-      sm_des: <>We always ensure that it combines a clean <br /> and beautiful visual design.</>,
-      tag_1: "UI/UX Audit",
-      tag_2: "Workshops",
+      title: <>Development</>,
+      sm_des: <>I build and code your project, implementing designs into a functional and responsive website.</>,
+      tag_1: "Front-End Coding",
+      tag_2: "Interactive Features",
+    },
+    {
+      id: 3,
+      icon: <DevelopmentIcon />,
+      title: <>Testing</>,
+      sm_des: <>I thoroughly test the website to ensure it meets quality standards and performs well across all browsers.</>,
+      tag_1: "Quality Assurance",
+      tag_2: "Testing",
+    },
+    {
+      id: 4,
+      icon: <LeadershipIcon />,
+      title: <>Maintenance</>,
+      sm_des: <>I provide ongoing support and updates to keep your website running smoothly and efficiently.</>,
+      tag_1: "Regular Updates",
+      tag_2: "Performance Monitoring",
     },
   ]
 }
