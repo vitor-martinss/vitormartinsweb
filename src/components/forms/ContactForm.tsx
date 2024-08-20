@@ -23,11 +23,11 @@ const schema = yup
 
 
 const budget_categorys = [
+  { id: "5_10k", title: "5-10k", },
   { id: "10_20k", title: "10-20k", },
   { id: "30_40k", title: "30-40k", },
   { id: "40_50k", title: "40-50k", },
-  { id: "50_100k", title: "50-100k", },
-  { id: "greater_than_100k", title: "> 100k", },
+  { id: "greater_than_50k", title: "> 50k", },
 ]
 
 const ContactForm = () => {
@@ -135,7 +135,7 @@ const ContactForm = () => {
           <div className="row">
             <div className="col-xl-12">
               <div className="contact-inner__category mb-45">
-                <h4 className="contact-inner__category-title">Project budget (USD)</h4>
+                <h4 className="contact-inner__category-title">Project budget (EUR)</h4>
                 <div className="contact-inner__category-wrapper">
 
                   {budget_categorys.map((item, index) => (

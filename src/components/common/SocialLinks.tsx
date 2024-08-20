@@ -64,8 +64,8 @@ const hero_link_home_three: HDataType[] = [
   },
   {
     id: 3,
-    link: "info@bigspinlab.com",
-    title: "Email",
+    link: "https://www.instagram.com/vitormartinsweb/",
+    title: "Instagram",
   }
 ]
 export const HeroSocialLinksHomeThree = () => {

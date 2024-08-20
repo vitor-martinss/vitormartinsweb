@@ -22,20 +22,19 @@ interface DataType {
 
 
 const contact_content: DataType = {
-  subtitle: "Contact Us",
+  subtitle: "Contact Me",
   title_1: "Let’s Talk",
   title_2: "About your Project",
-  email: "hello@diego.com",
+  email: "vitormartinsweb@gmail.com",
   mail_text: <>Interested in working with me? Submit your <br /> project inquiry using the form below.</>,
   categorys: [
-    { id: "branding", title: "Branding" },
-    { id: "web_design", title: "Web Design" },
-    { id: "app_design", title: "App Design" },
-    { id: "logo", title: "Logo" },
-    { id: "digital_marketing", title: "Digital Marketing" },
+    { id: "frontend_development", title: "Front-End Development" },
+    { id: "web_performance", title: "Web Performance Optimization" },
+    { id: "accessibility", title: "Web Accessibility" },
+    { id: "design_systems", title: "Design Systems" },
+    { id: "code_review", title: "Code Review & Refactoring" },
     { id: "android_development", title: "Android Development" },
     { id: "iso_development", title: "iOS Development" },
-    { id: "design_concept", title: "Design Concept" },
     { id: "other", title: "Other" },
   ],
 }
@@ -74,8 +73,7 @@ const ContactArea = () => {
                 <div className="col-xl-9 col-lg-10">
                   <div className="contact-inner__top-section-title-box mb-70">
                     <span className="contact-inner__subtitle">{subtitle}</span>
-                    <h4 className="contact-inner__title tp-char-animation tp-hero-3__content">{title_1} {' '}
-                      <span><Image src={contact_img} alt="image-here" /></span> <br />
+                    <h4 className="contact-inner__title tp-char-animation tp-hero-3__content">{title_1} <br />
                       {title_2}
                     </h4>
                   </div>

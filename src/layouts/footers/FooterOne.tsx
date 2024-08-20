@@ -28,20 +28,20 @@ const footer_content: DataType = {
   footer_data: [
     {
       id: 1,
-      name: "Behance",
-      user_name: "@diego_des",
+      name: "GitHub",
+      user_name: "github.com/vitor-martinss",
       icon: <BehanceIconFooter />,
     },
     {
       id: 2,
-      name: "Google",
-      user_name: "@diego_des",
+      name: "Linkedin",
+      user_name: "linkedin.com/in/vitor-martinss",
       icon: <GoogleIconFooter />,
     },
     {
       id: 3,
       name: "Instagram",
-      user_name: "@diego_des",
+      user_name: "@vitormartinsweb",
       icon: <InstagramIconFooter />,
     },
   ]
@@ -97,7 +97,7 @@ const FooterOne = ({ style }: any) => {
                     </div>
                     <div className="col-xl-6 col-lg-6 col-md-6">
                       <div className="tp-footer-btn text-center">
-                        <a className="tp-btn-grey-xl w-100" target="_blank" href="mailto:WriteaMessage">
+                        <a className="tp-btn-grey-xl w-100" target="_blank" href="mailto:vitormartinsweb@gmail.com">
                           <div>
                             <span>Write a Message</span>
                           </div>
@@ -111,7 +111,7 @@ const FooterOne = ({ style }: any) => {
                   <div className="row">
                     <div className="col-xl-6 col-lg-6 col-md-6">
                       <div className="tp-footer-btn text-center ">
-                        <a className="tp-btn-green w-100" href="mailto:WriteaMessage">
+                        <a className="tp-btn-green w-100" href="mailto:vitormartinsweb@gmail.com">
                           <div>
                             <span>{btn_text_1}</span>
                           </div>

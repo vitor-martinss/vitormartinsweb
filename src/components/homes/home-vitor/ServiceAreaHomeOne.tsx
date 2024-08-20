@@ -28,12 +28,12 @@ const service_content: DataType = {
     {
       id: 1,
       tab_id: "One",
-      question: "Turning Designs into Websites",
-      answer: "I turn design ideas into working websites. I make sure everything looks good and works smoothly.",
+      question: "Bringing Designs to Life",
+      answer: "I bring design concepts to life by transforming static mockups into dynamic, functional websites that are visually appealing and user-friendly.",
       some_features: [
-        "Turning designs into interactive sites",
-        "Making sure everything works on all devices",
-        "Keeping the design and function consistent",
+        "Converting design mockups into interactive, responsive websites",
+        "Ensuring consistent visual quality across all devices and browsers",
+        "Implementing accessibility features to create inclusive user experiences",
       ]
     },
     {
@@ -50,12 +50,12 @@ const service_content: DataType = {
     {
       id: 3,
       tab_id: "Three",
-      question: "Building and Optimizing Websites",
-      answer: "I build fast, responsive websites that are easy to find on search engines.",
+      question: "Performance and SEO Optimization",
+      answer: "I enhance website performance and search engine visibility by applying best practices for speed, responsiveness, and SEO.",
       some_features: [
-        "Creating sites that work well on any device",
-        "Speeding up websites for better performance",
-        "Improving SEO to make sites easier to find on Google",
+        "Optimizing websites for fast load times and smooth navigation",
+        "Implementing responsive design to ensure compatibility across devices",
+        "Improving search engine ranking through technical SEO and content optimization",
       ]
     },
     {
@@ -113,10 +113,10 @@ const ServiceAreaHomeOne = () => {
 
                   <div className="tp-services-capsule-item-wrapper">
                     <p data-tp-throwable-el="">
-                      <span className="tp-services-capsule-item" style={{ backgroundColor: "#00CC97" }}>Front-end</span>
+                      <span className="tp-services-capsule-item" style={{ backgroundColor: "#00CC97" }}>Front-end Development</span>
                     </p>
                     <p data-tp-throwable-el="">
-                      <span className="tp-services-capsule-item" style={{ backgroundColor: "#FF759C" }}>Tailwind</span>
+                      <span className="tp-services-capsule-item" style={{ backgroundColor: "#FF759C" }}>Optimization</span>
                     </p>
                     <p data-tp-throwable-el="">
                       <span className="tp-services-capsule-item" style={{ backgroundColor: "#FFDB59", color: "#121212" }}>Design Systems</span>
@@ -125,10 +125,10 @@ const ServiceAreaHomeOne = () => {
                       <span className="tp-services-capsule-item" style={{ backgroundColor: "#FFDB59", color: "#121212" }}>Consulting</span>
                     </p>
                     <p data-tp-throwable-el="">
-                      <span className="tp-services-capsule-item" style={{ backgroundColor: "#00CC97" }}>Performance Optimization</span>
+                      <span className="tp-services-capsule-item" style={{ backgroundColor: "#00CC97" }}>Performance</span>
                     </p>
                     <p data-tp-throwable-el="">
-                      <span className="tp-services-capsule-item" style={{ backgroundColor: "#FFDB59", color: "#121212" }}>SEO</span>
+                      <span className="tp-services-capsule-item" style={{ backgroundColor: "#FF759C"}}>SEO</span>
                     </p>
                     <p data-tp-throwable-el="">
                       <span className="tp-services-capsule-item" style={{ backgroundColor: "#00CC97" }}>Responsive</span>

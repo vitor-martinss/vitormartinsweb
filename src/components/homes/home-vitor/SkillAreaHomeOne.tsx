@@ -20,7 +20,7 @@ import Image, { StaticImageData } from 'next/image';
 interface DataType {
   subtitle: string;
   title: string;
-  info: string;
+  info: React.JSX.Element;
   skill_data: {
     tab_id: string;
     items: {
@@ -33,41 +33,102 @@ interface DataType {
 const skill_content: DataType = {
   subtitle: "Advantage",
   title: "Skills & tools",
-  info: "For those who know what they're looking for..",
+  info: <>For those who know what they're looking for. <br /> These are just a few of my key skills, there's much more where that came from.</>,
   skill_data: [
     {
       tab_id: "tech",
       items: [
         {
           img: skill_img_1,
-          title: "Angular",
+          title: "React",
           percent: 85
         },
         {
           img: skill_img_2,
-          title: "WordPress",
+          title: "JavaScript",
           percent: 95
         },
         {
           img: skill_img_3,
-          title: "NodeJS",
+          title: "TypeScript",
           percent: 60
         },
         {
           img: skill_img_4,
-          title: "HTML",
-          percent: 97
+          title: "Next.js",
+          percent: 90
         },
         {
-          img: skill_img_5,
-          title: "Webflow",
-          percent: 80,
+          img: skill_img_3,
+          title: "TanStack",
+          percent: 60
+        },
+        {
+          img: skill_img_3,
+          title: "Redux",
+          percent: 60
+        },
+        {
+          img: skill_img_3,
+          title: "Tailwind",
+          percent: 60
+        },
+        {
+          img: skill_img_3,
+          title: "SCSS/Sass",
+          percent: 60
+        },
+        {
+          img: skill_img_3,
+          title: "Storybook",
+          percent: 60
+        },
+        {
+          img: skill_img_3,
+          title: "Jest",
+          percent: 60
+        },
+        {
+          img: skill_img_3,
+          title: "Git",
+          percent: 60
+        },
+        {
+          img: skill_img_3,
+          title: "NodeJS",
+          percent: 97
         },
         {
           img: skill_img_6,
           title: "Vue",
           percent: 90
-        }
+        },
+        {
+          img: skill_img_4,
+          title: "HTML5",
+          percent: 90
+        },
+        {
+          img: skill_img_4,
+          title: "CSS",
+          percent: 90
+        },
+        {
+          img: skill_img_4,
+          title: "Webpack",
+          percent: 90
+        },
+        {
+          img: skill_img_3,
+          title: "Vitejs",
+          percent: 60
+        },
+        {
+          img: skill_img_3,
+          title: "Astro",
+          percent: 60
+        },
+        
       ],
     },
     {
@@ -79,19 +140,9 @@ const skill_content: DataType = {
           percent: 95,
         },
         {
-          img: skill_img_8,
-          title: "Sketch",
-          percent: 82
-        },
-        {
           img: skill_img_9,
           title: "Photoshop",
           percent: 98
-        },
-        {
-          img: skill_img_10,
-          title: "Adobe XD",
-          percent: 85
         },
         {
           img: skill_img_11,
@@ -102,8 +153,17 @@ const skill_content: DataType = {
           img: skill_img_12,
           title: "Illustrator",
           percent: 80
+        },
+        {
+          img: skill_img_5,
+          title: "Webflow",
+          percent: 80,
+        },
+        {
+          img: skill_img_8,
+          title: "Sketch",
+          percent: 82
         }
-
       ],
     }
   ]
@@ -175,7 +235,7 @@ const SkillAreaHomeOne = () => {
 
   return (
     <>
-      <section className="tp-skill-area pt-115 pb-105 p-relative z-index-1 fix theme-bg-3" style={{ backgroundImage: 'url(/assets/img/skill/bg-distort.png)' }}>
+      <section className="tp-skill-area pt-115 pb-105 p-relative z-index-1 fix black-bg-3 tp-footer__customize" style={{ backgroundImage: 'url(/assets/img/footer/overly-bg-2.png)' }}>
         <div className="tp-skill-shape">
           <span className="tp-skill-shape-1"></span>
           <span className="tp-skill-shape-2"></span>
@@ -200,7 +260,7 @@ const SkillAreaHomeOne = () => {
                 <nav>
                   <div className="nav nav-tabs tp-marker-tab" id="nav-tab" role="tablist">
                     {skill_data.map((item, i) =>
-                      <button key={i} className={`nav-link ${i === 1 ? 'active' : ''}`} id={`nav-${item.tab_id}-tab`} data-bs-toggle="tab"
+                      <button key={i} className={`nav-link ${i === 0 ? 'active' : ''}`} id={`nav-${item.tab_id}-tab`} data-bs-toggle="tab"
                         data-bs-target={`#nav-${item.tab_id}`} type="button" role="tab" aria-controls={`nav-${item.tab_id}`}
                         aria-selected={`${i === 0 ? 'false' : 'true'}`} tabIndex={-1}> {item.tab_id}
                       </button>
@@ -217,7 +277,7 @@ const SkillAreaHomeOne = () => {
               <div className="tab-content" id="nav-tabContent">
 
                 {skill_data.map((item, i) =>
-                  <div key={i} className={`tab-pane fade ${i === 1 ? 'show active' : ''}`}
+                  <div key={i} className={`tab-pane fade ${i === 0 ? 'show active' : ''}`}
                     id={`nav-${item.tab_id}`} role="tabpanel" aria-labelledby={`nav-${item.tab_id}-tab`} tabIndex={0}>
                     <div className="tp-skill-tab-content tp-skill-radius">
                       <div className="row">

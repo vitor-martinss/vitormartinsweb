@@ -22,7 +22,7 @@ const HomeVitor = () => {
             <ProjectAreaHomeThree />
             <SkillAreaHomeOne />
           </main>
-          <FooterOne />
+          <FooterOne style/>
         </div>
       </div>
     </>
