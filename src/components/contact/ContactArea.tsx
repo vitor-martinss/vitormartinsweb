@@ -78,22 +78,16 @@ const ContactArea = () => {
                     </h4>
                   </div>
                 </div>
-                <div className="col-xl-3 col-lg-2 d-none d-sm-block text-end">
-                  <div className="contact-inner__shape-1 text-center text-lg-end">
-                    <Image className="flower-img" src={contact_flower_img_1} alt="image-here" />
-                    <Image className="flower-text" src={contact_flower_img_2} alt="image-here" />
-                  </div>
-                </div>
               </div>
               <div className="contact-inner__mail-box mb-90">
                 <div className="row">
-                  <div className="col-xl-6 col-lg-6 col-md-6">
+                  <div className="col-xl-6 col-lg-6 ">
                     <div className="contact-inner__mail-info">
                       <span>Email Me:</span>
                       <a href={`mailto:${email}`}>{email}</a>
                     </div>
                   </div>
-                  <div className="col-xl-6 col-lg-6 col-md-6">
+                  <div className="col-xl-6 col-lg-6 ">
                     <div className="contact-inner__mail-text">
                       <p>{mail_text}</p>
                     </div>

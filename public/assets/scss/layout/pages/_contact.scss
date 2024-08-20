@@ -348,6 +348,9 @@
             @media #{$xs}{
                 margin-bottom: 40px;
             }
+            @media #{$md}{
+                margin-bottom: 40px;
+            }
             & span{
                 display: block;
                 font-weight: 500;
@@ -382,6 +385,10 @@
                     &::after{
                         width: 100%;
                     }
+                }
+
+                @media #{$xs}{
+                    font-size: 24px;
                 }
             }
         }
