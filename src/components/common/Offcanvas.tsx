@@ -87,24 +87,20 @@ const Offcanvas = ({ showCanvas, setShowCanvas, style_bg, style_bg2 }: any) => {
             <div className="tp-offcanvas-right-inner d-flex flex-column justify-content-between h-100">
 
               <div className="tpoffcanvas__right-info">
-                <div className="tpoffcanvas__tel">
-                  <a href="tel:61404093954">+61404093 954</a>
-                </div>
                 <div className="tpoffcanvas__mail">
-                  <a href="mailto:hellocontact@diego.com">
-                    hello contact@diego.com</a>
+                  <a href="mailto:vitormartinsweb@gmail.com">
+                    vitormartinsweb@gmail.com</a>
                 </div>
                 <div className="tpoffcanvas__text">
-                  <p>If in doubt. reach out.</p>
+                  <p>If in doubt, reach me out!</p>
                 </div>
               </div>
 
               <div className="tpoffcanvas__social-link">
                 <ul>
-                  <li><a href="https://www.dribbble.com" target="_blank">Dribbble</a></li>
-                  <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-                  <li><a href="https://www.linkedin.com" target="_blank">Linkedin</a></li>
-                  <li><a href="https://www.behance.com" target="_blank">Behance</a></li>
+                  <li><a href="https://www.instagram.com/vitormartinsweb/" target="_blank">Instagram</a></li>
+                  <li><a href="https://www.linkedin.com/in/vitor-martinss/" target="_blank">Linkedin</a></li>
+                  <li><a href="https://github.com/vitor-martinss" target="_blank">GitHub</a></li>
                 </ul>
               </div>
             </div>

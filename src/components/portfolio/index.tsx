@@ -1,22 +1,20 @@
 'use client'
 import React from 'react';
-import HeaderFour from '@/layouts/headers/HeaderFour';
 import PortfolioSlider from './PortfolioSlider';
 import PortfolioArea from './PortfolioArea';
-import BrandAreaAbout from '../about/BrandAreaAbout';
 import FooterOne from '@/layouts/footers/FooterOne';
+import HeaderThree from '@/layouts/headers/HeaderThree';
 
 
 const Portfolio = () => {
   return (
     <>
-      <HeaderFour />
+      <HeaderThree />
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
             <PortfolioSlider />
             <PortfolioArea />
-            <BrandAreaAbout />
           </main>
           <FooterOne style={true} />
         </div>
