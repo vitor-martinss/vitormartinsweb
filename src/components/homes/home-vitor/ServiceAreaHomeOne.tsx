@@ -84,7 +84,7 @@ const ServiceAreaHomeOne = () => {
 
   return (
     <>
-      <section className="tp-services-area tp-sv tp-services-bg-text-animation fix p-relative pb-200" id="tp-sv">
+      <section className="tp-services-area tp-hero-3__area tp-sv tp-services-bg-text-animation fix p-relative pb-200" id="tp-sv">
         <div className="tp-hero-3__shape-2">
           <Image src={hero_shape_2} alt="image-here" />
         </div>

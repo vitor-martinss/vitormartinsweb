@@ -72,7 +72,7 @@ const { subtitle, title, sm_info, btn_text, service_data } = service_content
 const ServiceAreaHomeThree = ({ style }: any) => {
   return (
     <>
-      <div id="service" className={`tp-service-3__area services-panel-area tp-service-3__overlay-bg ${style ? 'sv-iiner__customize' : ''} black-bg-2 pt-150 pb-125 z-index-1`}>
+      <div id="service" className={`tp-service-3__area services-panel-area tp-service-3__overlay-bg ${style ? 'sv-iiner__customize' : ''} black-bg-2 pt-150 pb-125 z-index-1 tp-hero-3__area`}>
 
         <div className="tp-service-3__shape-1">
           <Image src={service_shape_1} alt="image-here" />
