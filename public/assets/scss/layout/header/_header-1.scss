@@ -48,8 +48,9 @@
             text-align: center;
             font-size: 18px;
             color: var(--tp-common-black-2);
-            background-color: #BCE70C;
+            background-color: var(--bs-light);
             border-radius: 6px;
+            border: 1.5px solid rgba(37, 37, 37, 0.1);
 
             & svg {
                 @extend %svg-2;

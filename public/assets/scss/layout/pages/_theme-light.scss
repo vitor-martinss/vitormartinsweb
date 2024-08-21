@@ -438,7 +438,7 @@ html[tp-theme='tp-theme-light']{
         color: var(--tp-common-black);
     }
     & .tp-footer-bg{
-        background-color: #E7EAF0;
+        background-color: #F6F9FF;
     }
     & .tp-footer-title {
         color: var(--tp-common-black-5);
@@ -465,6 +465,12 @@ html[tp-theme='tp-theme-light']{
     & .tp-copyright-content-right span::after {
         background-color: #A9A0A0;
         opacity: 0.3;
+    }
+    & .tp-footer-circle-1 span {
+        display: none;
+    }
+    & .tp-footer-circle-2 span {
+        display: none;    
     }
     & .tp-footer-circle-3 span {
         background: linear-gradient(179deg, rgba(255, 255, 255, 0.48) 1.05%, rgba(255, 255, 255, 0.00) 65.75%);
@@ -527,6 +533,9 @@ html[tp-theme='tp-theme-light']{
     }
     & .postbox__comment-btn button span i {
         text-shadow: 0 22px 0 var(--tp-common-white);
+    }
+    & .tp-header-cv-btn {
+        background: #F6F9FF;
     }
     & .tp-header-2__maito a::after {
         background-color: var(--tp-pink-2);
@@ -1671,7 +1680,7 @@ html[tp-theme='tp-theme-light']{
         background-color: var(--tp-common-white);
     }
     & .tp-footer-bg-light{
-        background-color: #F0F2E8;
+        background-color: #F6F9FF;
     }
     .tp-hero-social a {
         background-color: #171718;

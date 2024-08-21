@@ -4,9 +4,7 @@ import React from 'react';
 import Image from "next/image";
 
 import about_shape_1 from "@/assets/img/hero/hero-shape-2-1.png";
-import about_signature from "@/assets/img/hero/ab-signature.jpg";
-import about_circle from "@/assets/img/hero/ab-circle-img.png";
-import about_img from "@/assets/img/hero/ab-hero-1.jpg";
+import about_img from "@/assets/img/hero/hero-about.webp";
 import { scroller } from 'react-scroll';
 
 
@@ -29,7 +27,7 @@ const HeroAreaAbout = () => {
           <Image src={about_shape_1} alt="image-here" />
         </div>
         <div className="ab-hero__text d-none d-lg-block col-md-4">
-          <span>About Me</span>
+          <span>About</span>
         </div>
         <div className="smooth">
           <a  onClick={scrollTo} className="d-none d-xl-block pointer">
@@ -49,9 +47,9 @@ const HeroAreaAbout = () => {
         </div>
         <div className="container">
           <div className="row">
-            <div className="col-xl-4 col-lg-5">
+            <div className="col-lg-6">
               <div className="ab-hero__title-box">
-                <h3 className="ab-hero__title tp-char-animation">I' m Vitor Martins</h3>
+                <h3 className="ab-hero__title tp-char-animation">I'm <br /> Vitor Martins</h3>
               </div>
               <div className="ab-hero__btn-box">
                 <a className="tp-btn-border-sm" href="assets/img/cv/mycv.docx">
@@ -72,14 +70,8 @@ const HeroAreaAbout = () => {
                 </a>
               </div>
             </div>
-            <div className="col-xl-8 col-lg-7">
+            <div className="col-lg-6">
               <div className="ab-hero__right-box text-end p-relative mt-25 wow tpfadeLeft" data-wow-duration=".9s" data-wow-delay=".5s">
-                <div className="ab-hero__signature">
-                  <Image src={about_signature} alt="image-here" />
-                </div>
-                <div className="ab-hero__circle">
-                  <Image className="tp-rotate-center" src={about_circle} alt="image-here" />
-                </div>
                 <div className="ab-hero__big-img">
                   <Image src={about_img} style={{ height: "auto" }} alt="image-here" />
                 </div>

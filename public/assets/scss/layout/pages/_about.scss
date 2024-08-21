@@ -286,7 +286,8 @@
             font-size: 14px;
             line-height: 15px;
             color: rgba(255, 255, 255, 0.5);
-            margin-right: 95px;
+            margin-right: 60px;
+            min-width: 100px;
             @media #{$xs}{
                 margin-right: 50px;
                 margin-bottom: 15px;

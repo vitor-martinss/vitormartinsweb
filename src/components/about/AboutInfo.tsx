@@ -12,7 +12,7 @@ const AboutInfo = () => {
               <div className="ab-info__text">
 
                 <div>
-                  I'm Vitor <span className="line"></span> a dedicated JavaScript developer with a strong passion for technology and web development. I focus on building reliable web applications using agile methods, always aiming to deliver high-quality and efficient results.
+                  I'm Vitor <span className="line"></span> a dedicated JavaScript developer with a strong passion for technology and web development. I focus on building reliable web applications using agile methods, always aiming to deliver high-quality and efficient results. <br /> <br /> When I´m not coding I´m skating!
                 </div>
 
               </div>
