@@ -5,6 +5,8 @@ import BehanceIconFooter from '@/svg/home/FooterIcons/BehanceIconFooter';
 import GoogleIconFooter from '@/svg/home/FooterIcons/GoogleIconFooter';
 import InstagramIconFooter from '@/svg/home/FooterIcons/InstagramIconFooter';
 import Link from 'next/link';
+import GitHubIconFooter from '@/svg/home/FooterIcons/GithubIconFooter';
+import LinkedinIconFooter from '@/svg/home/FooterIcons/LinkedinIconFooter';
 
 
 interface DataType {
@@ -15,6 +17,7 @@ interface DataType {
   footer_data: {
     id: number;
     name: string;
+    url: string;
     user_name: string;
     icon: React.JSX.Element;
   }[];
@@ -29,18 +32,21 @@ const footer_content: DataType = {
     {
       id: 1,
       name: "GitHub",
+      url: "https://github.com/vitor-martinss",
       user_name: "github.com/vitor-martinss",
-      icon: <BehanceIconFooter />,
+      icon: <GitHubIconFooter />,
     },
     {
       id: 2,
       name: "Linkedin",
-      user_name: "linkedin.com/in/vitor-martinss",
-      icon: <GoogleIconFooter />,
+      url: "https://www.linkedin.com/in/vitor-martinss/",
+      user_name: "/in/vitor-martinss",
+      icon: <LinkedinIconFooter />,
     },
     {
       id: 3,
       name: "Instagram",
+      url: "https://instagram.com/vitormartinsweb",
       user_name: "@vitormartinsweb",
       icon: <InstagramIconFooter />,
     },
@@ -134,7 +140,7 @@ const FooterOne = ({ style }: any) => {
               <div className="row gx-50">
                 {footer_data.map((item, index) => (
                   <div key={index} className="col-xl-4 col-lg-4 col-md-6" style={{ marginBottom: "30px" }}>
-                    <a href="#">
+                    <a href={item.url} target='_blank'>
                       <div className="tp-footer-social-item d-flex align-items-center justify-content-between">
                         <span className="tp-footer-anim-border"></span>
                         <div className="tp-footer-social-text z-index-1">
