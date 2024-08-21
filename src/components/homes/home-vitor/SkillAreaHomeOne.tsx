@@ -236,10 +236,6 @@ const SkillAreaHomeOne = () => {
   return (
     <>
       <section className="tp-skill-area pt-115 pb-105 p-relative z-index-1 fix black-bg-3 tp-footer__customize" style={{ backgroundImage: 'url(/assets/img/footer/overly-bg-2.png)' }}>
-        <div className="tp-skill-shape">
-          <span className="tp-skill-shape-1"></span>
-          <span className="tp-skill-shape-2"></span>
-        </div>
         <div className="container">
           <div className="row">
             <div className="col-xl-12">
@@ -283,7 +279,7 @@ const SkillAreaHomeOne = () => {
                       <div className="row">
                         {item.items.map((inner_item, index) =>
                           <div key={index} className="col-xl-2 col-lg-3 col-md-3 col-6">
-                            <div className="tp-skill-item text-center">
+                            <div className="tp-skill-item d-flex flex-column align-items-center text-center">
                               <div
                                 className="tp-skill-thumb d-flex align-items-center justify-content-center flex-column">
                                 <div className="tp-skill-icon">

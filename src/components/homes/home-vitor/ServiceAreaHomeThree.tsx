@@ -29,7 +29,7 @@ interface DataType {
 const service_content: DataType = {
   subtitle: "MY PROCESS",
   title: <>How I <br /> Carry Out My Projects</>,
-  sm_info: <>I offer a range of services to enhance your website and achieve your goals.</>,
+  sm_info: <>From concept to completion, I follow a structured approach to deliver high-quality results.</>,
   btn_text: <>Call me to get more extra service <span>Call Now</span></>,
   service_data: [
     {
@@ -72,7 +72,7 @@ const { subtitle, title, sm_info, btn_text, service_data } = service_content
 const ServiceAreaHomeThree = ({ style }: any) => {
   return (
     <>
-      <div id="service" className={`tp-service-3__area services-panel-area tp-service-3__overlay-bg ${style ? 'sv-iiner__customize' : ''} black-bg-2 pt-150 pb-125 z-index-1 tp-hero-3__area`}>
+      <div id="service" className={`tp-service-3__area services-panel-area tp-service-3__overlay-bg ${style ? 'sv-iiner__customize' : ''} black-bg-3 pt-150 pb-125 z-index-1 tp-hero-3__area`}>
 
         <div className="tp-service-3__shape-1">
           <Image src={service_shape_1} alt="image-here" />

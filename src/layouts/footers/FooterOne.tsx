@@ -71,9 +71,6 @@ const FooterOne = ({ style }: any) => {
       <footer>
         <div className={`tp-footer-bg ${style ? "tp-footer__customize  black-bg-3" : "tp-footer-bg-light theme-bg-2"} p-relative fix z-index-1`}
           style={{ backgroundImage: `url(${bg_img})` }}>
-          <div className="tp-footer-circle-1">
-            <span></span>
-          </div>
           <div className="tp-footer-circle-2">
             <span></span>
           </div>
