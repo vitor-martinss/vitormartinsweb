@@ -25,6 +25,7 @@ import skill_img_20 from "@/assets/img/skill/css.svg";
 import skill_img_21 from "@/assets/img/skill/webpack.svg";
 import skill_img_22 from "@/assets/img/skill/vitejs.svg";
 import skill_img_23 from "@/assets/img/skill/astro.svg";
+import skill_img_24 from "@/assets/img/skill/nodejs.png";
 
 
 
@@ -108,7 +109,7 @@ const skill_content: DataType = {
           percent: 60
         },
         {
-          img: skill_img_3,
+          img: skill_img_24,
           title: "NodeJS",
           percent: 97
         },
