@@ -5,7 +5,8 @@ import React from 'react';
 
 
 export const metadata = {
-  title: "Contact - Diego - Personal Creative Portfolio & Resume Next js Template",
+  title: "Vitor Martins::Contact",
+  description: "If in doubt, reach me out! Vitor Martins a front-end web developer based in Lisbon.",
 };
 
 

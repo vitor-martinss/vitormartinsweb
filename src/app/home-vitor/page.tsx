@@ -3,7 +3,8 @@ import Wrapper from '@/layouts/Wrapper';
 import React from 'react';
 
 export const metadata = {
-  title: "Home Vitor - Diego - Personal Creative Portfolio & Resume Next js Template",
+  title: "Vitor Martins::Portfolio",
+  description: "Vitor Martins a front-end web developer based in Lisbon. Specialised in creating digital experiences!",
 };
 
 

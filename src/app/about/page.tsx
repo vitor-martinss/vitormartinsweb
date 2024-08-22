@@ -4,7 +4,8 @@ import Wrapper from '@/layouts/Wrapper';
 import React from 'react';
 
 export const metadata = {
-  title: "About - Diego - Personal Creative Portfolio & Resume Next js Template",
+  title: "Vitor Martins::About",
+  description: "A dedicated JavaScript developer with a strong passion for technology and web development.",
 };
 
 
