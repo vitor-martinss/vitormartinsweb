@@ -69,7 +69,7 @@ const service_content: DataType = {
 
 const { subtitle, title, sm_info, btn_text, service_data } = service_content
 
-const ServiceAreaHomeThree = ({ style }: any) => {
+const Process = ({ style }: any) => {
   return (
     <>
       <div id="service" className={`tp-service-3__area services-panel-area tp-service-3__overlay-bg ${style ? 'sv-iiner__customize' : ''} black-bg-3 pt-150 pb-125 z-index-1 tp-hero-3__area`}>
@@ -128,4 +128,4 @@ const ServiceAreaHomeThree = ({ style }: any) => {
   );
 };
 
-export default ServiceAreaHomeThree;
+export default Process;

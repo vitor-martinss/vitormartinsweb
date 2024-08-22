@@ -75,7 +75,7 @@ const service_content: DataType = {
 const { subtitle, title, sm_des, accordion_data } = service_content;
 
 
-const ServiceAreaHomeOne = () => {
+const Services = () => {
   const [active, setActive] = useState(1);
 
   const handleItemClick = (index: number) => {
@@ -209,4 +209,4 @@ const ServiceAreaHomeOne = () => {
   );
 };
 
-export default ServiceAreaHomeOne;
+export default Services;

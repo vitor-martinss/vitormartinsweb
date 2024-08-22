@@ -13,7 +13,7 @@ import project_img_4 from "@/assets/img/portfolio/3/portfolio-4.jpg";
 type DataType = StaticImageData[];
 const project_imgs: DataType = [project_img_1, project_img_2, project_img_3, project_img_4];
 
-const ProjectAreaHomeThree = () => {
+const Projects = () => {
 
 
   const hoverTextRefs: React.RefObject<HTMLDivElement>[] | any = [];
@@ -76,7 +76,7 @@ const ProjectAreaHomeThree = () => {
   );
 };
 
-export default ProjectAreaHomeThree;
+export default Projects;
 
 
 

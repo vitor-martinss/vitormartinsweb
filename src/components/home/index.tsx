@@ -3,9 +3,9 @@ import React from 'react';
 import Header from '@/layouts/header/Header';
 import Hero from './Hero';
 import Process from './Process';
-import Project from './Projects';
-import Service from './Services';
-import Skill from './Skills';
+import Projects from './Projects';
+import Services from './Services';
+import Skills from './Skills';
 import Footer from '@/layouts/footer/Footer';
 
 const Home = () => {
@@ -17,10 +17,10 @@ const Home = () => {
         <div id="smooth-content">
           <main>
             <Hero />
-            <Service />
+            <Services />
             <Process />
-            <Project />
-            <Skill />
+            <Projects />
+            <Skills />
           </main>
           <Footer style/>
         </div>

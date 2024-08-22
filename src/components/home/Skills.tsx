@@ -184,7 +184,7 @@ const skill_content: DataType = {
 }
 const { subtitle, title, info, skill_data } = skill_content
 
-const SkillAreaHomeOne = () => {
+const Skills = () => {
 
   useEffect(() => {
     function tpTabLine2() {
@@ -322,4 +322,4 @@ const SkillAreaHomeOne = () => {
   );
 };
 
-export default SkillAreaHomeOne;
+export default Skills;

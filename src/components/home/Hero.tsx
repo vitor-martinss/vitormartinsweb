@@ -19,7 +19,7 @@ const scrollTo = () => {
 };
 
 
-const HeroAreaHomeThree = () => {
+const Hero = () => {
 
 
   return (
@@ -107,4 +107,4 @@ const HeroAreaHomeThree = () => {
   );
 };
 
-export default HeroAreaHomeThree;
+export default Hero;
