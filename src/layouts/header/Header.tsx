@@ -3,10 +3,6 @@ import Offcanvas from '@/components/common/Offcanvas';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 
-import lightLogo from '@/assets/img/logo/logo-2.png';
-import darkLogo from '@/assets/img/logo/logo-black.png';
-import Image from 'next/image';
-
 const Header = () => {
 
   const [showCanvas, setShowCanvas] = useState<boolean>(false);
@@ -99,8 +95,8 @@ const Header = () => {
             <div className="row align-items-center">
               <div className="col-xl-6 col-lg-6 col-md-6 col-6">
                 <div className="tp-header-3__logo">
-                  <Link className="logo-white" href="/"><Image src={lightLogo} alt="image-here" /></Link>
-                  <Link className="logo-black" href="/"><Image src={darkLogo} alt="image-here" /></Link>
+                  <Link className="logo-white" href="/"><p>VM</p></Link>
+                  <Link className="logo-black" href="/"><p>VM</p></Link>
                 </div>
               </div>
               <div className="col-xl-6 d-none">
@@ -196,8 +192,8 @@ const Header = () => {
             <div className="row align-items-center">
               <div className="col-xl-6 col-lg-6 col-md-6 col-6">
                 <div className="tp-header-3__logo">
-                  <Link className="logo-white" href="/"><Image src={lightLogo} alt="image-here" /></Link>
-                  <Link className="logo-black" href="/"><Image src={darkLogo} alt="image-here" /></Link>
+                  <Link className="logo-white" href="/">VM</Link>
+                  <Link className="logo-black" href="/">VM</Link>
                 </div>
               </div>
               <div className="col-xl-6 d-none">
