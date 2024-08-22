@@ -1,19 +1,33 @@
 'use client'
 import React, { useEffect } from 'react';
 // skill images
-import skill_img_1 from "@/assets/img/skill/angular.png";
-import skill_img_2 from "@/assets/img/skill/wp.png";
-import skill_img_3 from "@/assets/img/skill/nodejs.png";
-import skill_img_4 from "@/assets/img/skill/html.png";
+import skill_img_1 from "@/assets/img/skill/react.svg";
+import skill_img_2 from "@/assets/img/skill/javascript.svg";
+import skill_img_3 from "@/assets/img/skill/typescript.png";
+import skill_img_4 from "@/assets/img/skill/nextjs.svg";
 import skill_img_5 from "@/assets/img/skill/webflow.png";
 import skill_img_6 from "@/assets/img/skill/vue.png";
 
 import skill_img_7 from "@/assets/img/skill/figma.png";
 import skill_img_8 from "@/assets/img/skill/sketch.png";
 import skill_img_9 from "@/assets/img/skill/photoshop.png";
-import skill_img_10 from "@/assets/img/skill/xd.png";
+import skill_img_10 from "@/assets/img/skill/html.png";
 import skill_img_11 from "@/assets/img/skill/in.png";
 import skill_img_12 from "@/assets/img/skill/ai.png";
+import skill_img_13 from "@/assets/img/skill/tanstack.png";
+import skill_img_14 from "@/assets/img/skill/redux.svg";
+import skill_img_15 from "@/assets/img/skill/tailwind.svg";
+import skill_img_16 from "@/assets/img/skill/sass.svg";
+import skill_img_17 from "@/assets/img/skill/storybook.svg";
+import skill_img_18 from "@/assets/img/skill/jest.svg";
+import skill_img_19 from "@/assets/img/skill/git.svg";
+import skill_img_20 from "@/assets/img/skill/css.svg";
+import skill_img_21 from "@/assets/img/skill/webpack.svg";
+import skill_img_22 from "@/assets/img/skill/vitejs.svg";
+import skill_img_23 from "@/assets/img/skill/astro.svg";
+
+
+
 import Image, { StaticImageData } from 'next/image';
 
 
@@ -59,37 +73,37 @@ const skill_content: DataType = {
           percent: 90
         },
         {
-          img: skill_img_3,
+          img: skill_img_13,
           title: "TanStack",
           percent: 60
         },
         {
-          img: skill_img_3,
+          img: skill_img_14,
           title: "Redux",
           percent: 60
         },
         {
-          img: skill_img_3,
+          img: skill_img_15,
           title: "Tailwind",
           percent: 60
         },
         {
-          img: skill_img_3,
+          img: skill_img_16,
           title: "SCSS/Sass",
           percent: 60
         },
         {
-          img: skill_img_3,
+          img: skill_img_17,
           title: "Storybook",
           percent: 60
         },
         {
-          img: skill_img_3,
+          img: skill_img_18,
           title: "Jest",
           percent: 60
         },
         {
-          img: skill_img_3,
+          img: skill_img_19,
           title: "Git",
           percent: 60
         },
@@ -104,31 +118,30 @@ const skill_content: DataType = {
           percent: 90
         },
         {
-          img: skill_img_4,
+          img: skill_img_10,
           title: "HTML5",
           percent: 90
         },
         {
-          img: skill_img_4,
+          img: skill_img_20,
           title: "CSS",
           percent: 90
         },
         {
-          img: skill_img_4,
+          img: skill_img_21,
           title: "Webpack",
           percent: 90
         },
         {
-          img: skill_img_3,
+          img: skill_img_22,
           title: "Vitejs",
           percent: 60
         },
         {
-          img: skill_img_3,
+          img: skill_img_23,
           title: "Astro",
           percent: 60
         },
-        
       ],
     },
     {
@@ -284,7 +297,7 @@ const SkillAreaHomeOne = () => {
                                 className="tp-skill-thumb d-flex align-items-center justify-content-center flex-column">
                                 <div className="tp-skill-icon">
                                   <span>
-                                    <Image src={inner_item.img} alt="image-here" />
+                                    <Image className='tp-skill-image' src={inner_item.img} alt="image-here" />
                                   </span>
                                 </div>
                               </div>
