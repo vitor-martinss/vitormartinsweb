@@ -1,11 +1,10 @@
 import Error from "@/components/error";
-import Wrapper from "@/layouts/Wrapper";
-
- 
+import Wrapper from "@/layouts/Wrapper"; 
  
 export const metadata = {
-  title: "404 error || Diego React Next js Template",
+  title: "Vitor Martins::Not Found",
 };
+
 const index = () => {
   return (
     <Wrapper>
