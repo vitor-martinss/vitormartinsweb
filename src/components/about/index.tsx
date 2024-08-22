@@ -4,14 +4,14 @@ import AboutInfo from './AboutInfo';
 import PersonalInfo from './PersonalInfo';
 import HeroAreaAbout from './HeroAreaAbout';
 
-import FooterOne from '@/layouts/footers/FooterOne';
-import HeaderThree from '@/layouts/headers/HeaderThree';
+import Footer from '@/layouts/footer/Footer';
+import Header from '@/layouts/header/Header';
 
 
 const About = () => {
   return (
     <>
-      <HeaderThree />
+      <Header />
       <div id="smooth-wrapper" className="black-bg-3">
         <div id="smooth-content">
           <main>
@@ -19,7 +19,7 @@ const About = () => {
             <AboutInfo />
             <PersonalInfo />
           </main>
-          <FooterOne style />
+          <Footer style />
         </div>
       </div>
     </>

@@ -1,13 +1,13 @@
 
 import React from 'react'; 
 import Breadcrumb from './Breadcrumb';
-import FooterOne from '@/layouts/footers/FooterOne';
-import HeaderThree from '@/layouts/headers/HeaderThree';
+import Footer from '@/layouts/footer/Footer';
+import Header from '@/layouts/header/Header';
 
 const Error = () => {
   return (
     <>
-      <HeaderThree />
+      <Header />
       <main>
         <Breadcrumb />
         <section className="error-area black-bg-2 z-index-11 py-5">
@@ -25,7 +25,7 @@ const Error = () => {
           </div>
         </section>
       </main>
-      <FooterOne style/>
+      <Footer style/>
     </>
   );
 };

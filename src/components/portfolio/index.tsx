@@ -2,21 +2,21 @@
 import React from 'react';
 import PortfolioSlider from './PortfolioSlider';
 import PortfolioArea from './PortfolioArea';
-import FooterOne from '@/layouts/footers/FooterOne';
-import HeaderThree from '@/layouts/headers/HeaderThree';
+import Footer from '@/layouts/footer/Footer';
+import Header from '@/layouts/header/Header';
 
 
 const Portfolio = () => {
   return (
     <>
-      <HeaderThree />
+      <Header />
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
             <PortfolioSlider />
             <PortfolioArea />
           </main>
-          <FooterOne style={true} />
+          <Footer style={true} />
         </div>
       </div>
     </>

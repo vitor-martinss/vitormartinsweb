@@ -1,19 +1,16 @@
 'use client';
-import Link from 'next/link';
-import React, { useEffect, useState } from 'react'; 
 import Offcanvas from '@/components/common/Offcanvas';
+import Link from 'next/link';
+import React, { useEffect, useState } from 'react';
 
 import lightLogo from '@/assets/img/logo/logo-2.png';
 import darkLogo from '@/assets/img/logo/logo-black.png';
-import logo from '@/assets/img/logo/logo-2.png';
 import Image from 'next/image';
-import NavMenu from './menu/NavMenu'; 
 
-
-const HeaderFour = ({ style }: any) => {
+const Header = () => {
 
   const [showCanvas, setShowCanvas] = useState<boolean>(false);
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState<boolean>(false);
 
 
 
@@ -68,6 +65,8 @@ const HeaderFour = ({ style }: any) => {
     };
   }, []);
 
+
+
   // sticky header 
   const [lastScrollTop, setLastScrollTop] = useState(0);
   useEffect(() => {
@@ -93,45 +92,28 @@ const HeaderFour = ({ style }: any) => {
 
   return (
     <>
+
       <header>
-        <div className={`tp-header-4__area tp-header-transparent tp-header-4__plr ${style ? 'header tp-header-4__white-color tp-header-4__mob-ptb' : 'header tp-header-4__mob-ptb'}`}>
+        <div className="tp-header-3__area tp-header-transparent tp-header-3__ptlr">
           <div className="container-fluid">
             <div className="row align-items-center">
-              <div className="col-xl-2 col-lg-6 col-md-6 col-6">
+              <div className="col-xl-6 col-lg-6 col-md-6 col-6">
                 <div className="tp-header-3__logo">
-                  {style ?
-                    <>
-                      <Link className="logo-white" href="/"><Image src={logo} alt="logo" /></Link>
-                      <Link className="logo-black" href="/"><Image src={logo} alt="logo" /></Link>
-                    </>
-                    :
-                    <>
-
-                      <Link className="logo-white" href="/"><Image src={lightLogo} alt="image-here" /></Link>
-                      <Link className="logo-black" href="/"><Image src={darkLogo} alt="image-here" /></Link>
-                    </>
-
-                  }
-
+                  <Link className="logo-white" href="/"><Image src={lightLogo} alt="image-here" /></Link>
+                  <Link className="logo-black" href="/"><Image src={darkLogo} alt="image-here" /></Link>
                 </div>
               </div>
-              <div className="col-xl-7 d-none d-xl-block">
+              <div className="col-xl-6 d-none">
                 <div className="tp-header-4__menu text-center">
-                  <nav>
-                    <NavMenu />
-                  </nav>
-                  <div className="offcanvas-menu-style d-none">
-                    <nav className="tp-main-menu-content">
+                  <nav className="tp-main-menu-content counter-row">
 
-                    </nav>
-                  </div>
+                  </nav>
                 </div>
               </div>
-              <div className="col-xl-3 col-lg-6 col-md-6 col-6">
+              <div className="col-xl-6 col-lg-6 col-md-6 col-6">
                 <div className="tp-header-3__right-action d-flex align-items-center justify-content-end">
-
                   <div className="tp-theme-toggle-single">
-                    <label className="tp-theme-toggle-main themepure-theme-toggle dark-active">
+                    <label className="tp-theme-toggle-main themepure-theme-toggle">
                       <span className="dark">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
                           xmlns="http://www.w3.org/2000/svg">
@@ -142,6 +124,7 @@ const HeaderFour = ({ style }: any) => {
                       </span>
                       <input type="checkbox" className="themepure-theme-toggle-input" />
                       <span className="light">
+
                         <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
                           xmlns="http://www.w3.org/2000/svg">
                           <path
@@ -164,25 +147,31 @@ const HeaderFour = ({ style }: any) => {
                           <path d="M15.2031 4.79637L16.3649 3.63455" stroke="#FFC05A" strokeWidth="2"
                             strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
+
                       </span>
                     </label>
                   </div>
-
                   <div className="tp-header-3__btn d-none d-md-block">
                     <Link className="tp-btn-white" href="/contact">
-                      Let's Talk
+                      <span className="text">Let's Talk</span>
                       <span>
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M4.9297 10.3651C5.12061 10.2162 5.29376 10.043 5.64006 9.69671L9.95722 5.37954C10.0616 5.27517 10.0138 5.0954 9.87438 5.04702C9.36479 4.87022 8.70189 4.53829 8.0818 3.9182C7.46171 3.29811 7.12978 2.63521 6.95299 2.12562C6.9046 1.98617 6.72483 1.9384 6.62046 2.04278L2.30329 6.35994L2.30328 6.35995C1.95699 6.70624 1.78385 6.87939 1.63494 7.0703C1.45928 7.29551 1.30868 7.53919 1.18581 7.79701C1.08164 8.01558 1.00421 8.24789 0.849336 8.71249L0.649225 9.31283L0.331026 10.2674L0.0326691 11.1625C-0.0435433 11.3911 0.0159628 11.6432 0.186379 11.8136C0.356795 11.984 0.608868 12.0435 0.837505 11.9673L1.73258 11.669L2.68717 11.3508L3.28751 11.1507C3.75211 10.9958 3.98442 10.9184 4.20299 10.8142C4.46082 10.6913 4.70449 10.5407 4.9297 10.3651Z"
-                            fill="currentcolor" />
-                          <path
-                            d="M11.3089 4.02783C12.2304 3.10641 12.2304 1.61249 11.3089 0.691067C10.3875 -0.230356 8.89359 -0.230356 7.97217 0.691067L7.83337 0.82986C7.69944 0.963792 7.63876 1.15087 7.67222 1.3373C7.69327 1.45458 7.73229 1.62603 7.80327 1.83063C7.94522 2.23979 8.21329 2.77689 8.7182 3.2818C9.22311 3.78671 9.76021 4.05478 10.1694 4.19673C10.374 4.26772 10.5454 4.30673 10.6627 4.32778C10.8491 4.36124 11.0362 4.30056 11.1701 4.16663L11.3089 4.02783Z"
-                            fill="currentcolor" />
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4.9297 10.3651C5.12061 10.2162 5.29376 10.043 5.64006 9.69671L9.95722 5.37954C10.0616 5.27517 10.0138 5.0954 9.87438 5.04702C9.36479 4.87022 8.70189 4.53829 8.0818 3.9182C7.46171 3.29811 7.12978 2.63521 6.95299 2.12562C6.9046 1.98617 6.72483 1.9384 6.62046 2.04278L2.30329 6.35994L2.30328 6.35995C1.95699 6.70624 1.78385 6.87939 1.63494 7.0703C1.45928 7.29551 1.30868 7.53919 1.18581 7.79701C1.08164 8.01558 1.00421 8.24789 0.849336 8.71249L0.649225 9.31283L0.331026 10.2674L0.0326691 11.1625C-0.0435433 11.3911 0.0159628 11.6432 0.186379 11.8136C0.356795 11.984 0.608868 12.0435 0.837505 11.9673L1.73258 11.669L2.68717 11.3508L3.28751 11.1507C3.75211 10.9958 3.98442 10.9184 4.20299 10.8142C4.46082 10.6913 4.70449 10.5407 4.9297 10.3651Z" fill="currentcolor" />
+                          <path d="M11.3089 4.02783C12.2304 3.10641 12.2304 1.61249 11.3089 0.691067C10.3875 -0.230356 8.89359 -0.230356 7.97217 0.691067L7.83337 0.82986C7.69944 0.963792 7.63876 1.15087 7.67222 1.3373C7.69327 1.45458 7.73229 1.62603 7.80327 1.83063C7.94522 2.23979 8.21329 2.77689 8.7182 3.2818C9.22311 3.78671 9.76021 4.05478 10.1694 4.19673C10.374 4.26772 10.5454 4.30673 10.6627 4.32778C10.8491 4.36124 11.0362 4.30056 11.1701 4.16663L11.3089 4.02783Z" fill="currentcolor" />
                         </svg>
                       </span>
                     </Link>
+                  </div>
+                  <div className="tp-header-cv ml-10 d-none d-md-block">
+                    <a className="tp-header-cv-btn" href="assets/img/cv/mycv.docx">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 8C1 11.866 4.13401 15 8 15C11.866 15 15 11.866 15 8" stroke="currentColor"
+                          strokeWidth="1.5" strokeLinecap="round" />
+                        <path d="M8 1L8 9.75M8 9.75L10.625 7.125M8 9.75L5.375 7.125" stroke="currentColor"
+                          strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </a>
                   </div>
                   <div className="tp-header-3__bar">
                     <button className="tp-menu-bar tp-offcanvas-open-btn" onClick={() => setShowCanvas(true)}>
@@ -197,39 +186,36 @@ const HeaderFour = ({ style }: any) => {
             </div>
           </div>
         </div>
-
       </header>
 
+
+
       <header>
-        <div className="tp-header-4__area tp-header-transparent tp-header-4__mob-ptb tp-header-4__plr tp-int-menu tp-header-sticky-cloned">
+        <div className="tp-header-3__area tp-header-transparent tp-header-3__ptlr tp-int-menu tp-header-sticky-cloned">
           <div className="container-fluid">
             <div className="row align-items-center">
-              <div className="col-xl-2 col-lg-6 col-md-6 col-6">
+              <div className="col-xl-6 col-lg-6 col-md-6 col-6">
                 <div className="tp-header-3__logo">
                   <Link className="logo-white" href="/"><Image src={lightLogo} alt="image-here" /></Link>
                   <Link className="logo-black" href="/"><Image src={darkLogo} alt="image-here" /></Link>
                 </div>
               </div>
-              <div className="col-xl-7 d-none d-xl-block">
+              <div className="col-xl-6 d-none">
                 <div className="tp-header-4__menu text-center">
-                  <nav>
-                    <NavMenu />
-                  </nav>
-                  <div className="offcanvas-menu-style d-none">
-                    <nav className="tp-main-menu-content">
+                  <nav className="tp-main-menu-content counter-row">
 
-                    </nav>
-                  </div>
+                  </nav>
                 </div>
               </div>
-              <div className="col-xl-3 col-lg-6 col-md-6 col-6">
+              <div className="col-xl-6 col-lg-6 col-md-6 col-6">
                 <div className="tp-header-3__right-action d-flex align-items-center justify-content-end">
-
                   <div className="tp-theme-toggle-single">
                     <label
                       defaultChecked={active}
                       onChange={toggleTheme}
-                      className={`tp-theme-toggle-main themepure-theme-toggle  ${active ? 'dark-active' : 'light-active'}`}>
+                      className={`tp-theme-toggle-main themepure-theme-toggle  ${active ? 'dark-active' : 'light-active'}`}
+                      htmlFor="this-ss">
+
                       <span className="dark">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
                           xmlns="http://www.w3.org/2000/svg">
@@ -238,7 +224,7 @@ const HeaderFour = ({ style }: any) => {
                             fill="white" />
                         </svg>
                       </span>
-                      <input type="checkbox" className="themepure-theme-toggle-input" />
+                      <input type="checkbox" className="themepure-theme-toggle-input" id="this-ss" />
                       <span className="light">
                         <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
                           xmlns="http://www.w3.org/2000/svg">
@@ -265,25 +251,30 @@ const HeaderFour = ({ style }: any) => {
                       </span>
                     </label>
                   </div>
-
                   <div className="tp-header-3__btn d-none d-md-block">
                     <Link className="tp-btn-white" href="/contact">
-                      Let's Talk
+                      <span className="text">Let's Talk</span>
                       <span>
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M4.9297 10.3651C5.12061 10.2162 5.29376 10.043 5.64006 9.69671L9.95722 5.37954C10.0616 5.27517 10.0138 5.0954 9.87438 5.04702C9.36479 4.87022 8.70189 4.53829 8.0818 3.9182C7.46171 3.29811 7.12978 2.63521 6.95299 2.12562C6.9046 1.98617 6.72483 1.9384 6.62046 2.04278L2.30329 6.35994L2.30328 6.35995C1.95699 6.70624 1.78385 6.87939 1.63494 7.0703C1.45928 7.29551 1.30868 7.53919 1.18581 7.79701C1.08164 8.01558 1.00421 8.24789 0.849336 8.71249L0.649225 9.31283L0.331026 10.2674L0.0326691 11.1625C-0.0435433 11.3911 0.0159628 11.6432 0.186379 11.8136C0.356795 11.984 0.608868 12.0435 0.837505 11.9673L1.73258 11.669L2.68717 11.3508L3.28751 11.1507C3.75211 10.9958 3.98442 10.9184 4.20299 10.8142C4.46082 10.6913 4.70449 10.5407 4.9297 10.3651Z"
-                            fill="currentcolor" />
-                          <path
-                            d="M11.3089 4.02783C12.2304 3.10641 12.2304 1.61249 11.3089 0.691067C10.3875 -0.230356 8.89359 -0.230356 7.97217 0.691067L7.83337 0.82986C7.69944 0.963792 7.63876 1.15087 7.67222 1.3373C7.69327 1.45458 7.73229 1.62603 7.80327 1.83063C7.94522 2.23979 8.21329 2.77689 8.7182 3.2818C9.22311 3.78671 9.76021 4.05478 10.1694 4.19673C10.374 4.26772 10.5454 4.30673 10.6627 4.32778C10.8491 4.36124 11.0362 4.30056 11.1701 4.16663L11.3089 4.02783Z"
-                            fill="currentcolor" />
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4.9297 10.3651C5.12061 10.2162 5.29376 10.043 5.64006 9.69671L9.95722 5.37954C10.0616 5.27517 10.0138 5.0954 9.87438 5.04702C9.36479 4.87022 8.70189 4.53829 8.0818 3.9182C7.46171 3.29811 7.12978 2.63521 6.95299 2.12562C6.9046 1.98617 6.72483 1.9384 6.62046 2.04278L2.30329 6.35994L2.30328 6.35995C1.95699 6.70624 1.78385 6.87939 1.63494 7.0703C1.45928 7.29551 1.30868 7.53919 1.18581 7.79701C1.08164 8.01558 1.00421 8.24789 0.849336 8.71249L0.649225 9.31283L0.331026 10.2674L0.0326691 11.1625C-0.0435433 11.3911 0.0159628 11.6432 0.186379 11.8136C0.356795 11.984 0.608868 12.0435 0.837505 11.9673L1.73258 11.669L2.68717 11.3508L3.28751 11.1507C3.75211 10.9958 3.98442 10.9184 4.20299 10.8142C4.46082 10.6913 4.70449 10.5407 4.9297 10.3651Z" fill="currentcolor" />
+                          <path d="M11.3089 4.02783C12.2304 3.10641 12.2304 1.61249 11.3089 0.691067C10.3875 -0.230356 8.89359 -0.230356 7.97217 0.691067L7.83337 0.82986C7.69944 0.963792 7.63876 1.15087 7.67222 1.3373C7.69327 1.45458 7.73229 1.62603 7.80327 1.83063C7.94522 2.23979 8.21329 2.77689 8.7182 3.2818C9.22311 3.78671 9.76021 4.05478 10.1694 4.19673C10.374 4.26772 10.5454 4.30673 10.6627 4.32778C10.8491 4.36124 11.0362 4.30056 11.1701 4.16663L11.3089 4.02783Z" fill="currentcolor" />
                         </svg>
                       </span>
                     </Link>
                   </div>
+                  <div className="tp-header-cv ml-10 d-none d-md-block">
+                    <a className="tp-header-cv-btn" href="assets/img/cv/mycv.docx">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 8C1 11.866 4.13401 15 8 15C11.866 15 15 11.866 15 8" stroke="currentColor"
+                          strokeWidth="1.5" strokeLinecap="round" />
+                        <path d="M8 1L8 9.75M8 9.75L10.625 7.125M8 9.75L5.375 7.125" stroke="currentColor"
+                          strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </a>
+                  </div>
                   <div className="tp-header-3__bar">
-                    <button className=" tp-menu-bar tp-offcanvas-open-btn" onClick={() => setShowCanvas(true)}>
+                    <button className="tp-menu-bar tp-offcanvas-open-btn" onClick={() => setShowCanvas(true)}>
                       <svg width="32" height="10" viewBox="0 0 32 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M31 1H1" stroke="currentcolor" strokeWidth="2" strokeLinecap="round" />
                         <path d="M31 9H1" stroke="currentcolor" strokeWidth="2" strokeLinecap="round" />
@@ -298,8 +289,9 @@ const HeaderFour = ({ style }: any) => {
       </header>
 
       <Offcanvas showCanvas={showCanvas} setShowCanvas={setShowCanvas} />
+
     </>
   );
 };
 
-export default HeaderFour;
+export default Header;

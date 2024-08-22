@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import MobileMenus from '@/layouts/headers/menu/mobile-menus';
+import MobileMenus from '@/layouts/header/menu/mobile-menus';
 
 import bg_shape from "@/assets/img/offcanvas/bg-shape-3.png";
 import logo_white from "@/assets/img/logo/logo.png";

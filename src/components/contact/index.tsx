@@ -1,21 +1,21 @@
 'use client'
 import React from 'react';
 import ContactArea from './ContactArea';
-import FooterOne from '@/layouts/footers/FooterOne';
-import HeaderThree from '@/layouts/headers/HeaderThree';
+import Footer from '@/layouts/footer/Footer';
+import Header from '@/layouts/header/Header';
 
 
 
 const Contact = () => {
   return (
     <>
-      <HeaderThree />
+      <Header />
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
             <ContactArea />
           </main>
-          <FooterOne style={true} />
+          <Footer style={true} />
         </div>
       </div>
 

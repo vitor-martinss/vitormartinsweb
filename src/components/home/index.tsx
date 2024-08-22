@@ -1,18 +1,18 @@
 'use client';
 import React from 'react';
-import HeaderThree from '@/layouts/headers/HeaderThree';
+import Header from '@/layouts/header/Header';
 import Hero from './Hero';
 import Process from './Process';
 import Project from './Projects';
 import Service from './Services';
 import Skill from './Skills';
-import FooterOne from '@/layouts/footers/FooterOne';
+import Footer from '@/layouts/footer/Footer';
 
 const Home = () => {
 
   return (
     <>
-      <HeaderThree />
+      <Header />
       <div id="smooth-wrapper" className="black-bg-3">
         <div id="smooth-content">
           <main>
@@ -22,7 +22,7 @@ const Home = () => {
             <Project />
             <Skill />
           </main>
-          <FooterOne style/>
+          <Footer style/>
         </div>
       </div>
     </>

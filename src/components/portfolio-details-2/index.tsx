@@ -3,7 +3,7 @@
 import React from 'react';
 import PortfolioDetailsAreaTwo from './PortfolioDetailsAreaTwo';
 import HeaderSix from '@/layouts/headers/HeaderSix';
-import FooterSix from '@/layouts/footers/FooterSix';
+import FooterSix from '@/layouts/footer/FooterSix';
 
 const PortfolioDetailsTwo = () => {
   return (

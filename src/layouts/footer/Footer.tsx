@@ -59,12 +59,8 @@ const { btn_text_1, btn_text_2, title_2, footer_data } = footer_content
 
 
 
-const FooterOne = ({ style }: any) => {
+const Footer = ({ style }: any) => {
   const bg_img = style ? "/assets/img/footer/overly-bg-2.png" : "/assets/img/skill/bg-distort.png";
-
-
-
-
 
   return (
     <>
@@ -179,4 +175,4 @@ const FooterOne = ({ style }: any) => {
   );
 };
 
-export default FooterOne;
+export default Footer;

@@ -6,7 +6,7 @@ import Logo1 from "@/assets/img/logo/logo.png"
 import Logo2 from "@/assets/img/logo/logo-black.png"
 import logo_white from "@/assets/img/logo/logo-white.png"
 import Shape from "@/assets/img/offcanvas/bg-shape-2.png"
-import MobileMenus from '@/layouts/headers/menu/mobile-menus';
+import MobileMenus from '@/layouts/header/menu/mobile-menus';
 
 
 const Offcanvas = ({ showCanvas, setShowCanvas, style_bg, style_bg2 }: any) => {

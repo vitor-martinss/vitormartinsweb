@@ -2,7 +2,7 @@
 import React from 'react';
 import HeaderNine from '@/layouts/headers/HeaderNine';
 import PortfolioDetailsThreeArea from './PortfolioDetailsThreeArea';
-import FooterFive from '@/layouts/footers/FooterFive';
+import FooterFive from '@/layouts/footer/FooterFive';
 
 const PortfolioDetailsThree = () => {
   return (
