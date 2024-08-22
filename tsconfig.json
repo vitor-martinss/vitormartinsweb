@@ -30,6 +30,6 @@
       "@/plugins/*": ["./src/plugins/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/home/home/gsap.tsx", "src/utils/utils.JS"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/home/gsap.tsx", "src/utils/utils.JS"],
   "exclude": ["node_modules"]
 }
