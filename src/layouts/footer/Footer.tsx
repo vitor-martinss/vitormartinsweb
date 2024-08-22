@@ -1,8 +1,6 @@
 'use client';
 import React from 'react';
 import { CopyRight } from '@/components/common/SocialLinks';
-import BehanceIconFooter from '@/svg/home/FooterIcons/BehanceIconFooter';
-import GoogleIconFooter from '@/svg/home/FooterIcons/GoogleIconFooter';
 import InstagramIconFooter from '@/svg/home/FooterIcons/InstagramIconFooter';
 import Link from 'next/link';
 import GitHubIconFooter from '@/svg/home/FooterIcons/GithubIconFooter';

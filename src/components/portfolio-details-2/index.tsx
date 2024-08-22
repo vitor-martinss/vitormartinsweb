@@ -2,19 +2,19 @@
 
 import React from 'react';
 import PortfolioDetailsAreaTwo from './PortfolioDetailsAreaTwo';
-import HeaderSix from '@/layouts/headers/HeaderSix';
-import FooterSix from '@/layouts/footer/FooterSix';
+import Header from '@/layouts/header/Header';
+import Footer from '@/layouts/footer/Footer';
 
 const PortfolioDetailsTwo = () => {
   return (
     <>
-      <HeaderSix style_bg={true} />
+      <Header />
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
             <PortfolioDetailsAreaTwo />
           </main>
-          <FooterSix />
+          <Footer />
         </div>
       </div>
     </>

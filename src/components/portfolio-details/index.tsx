@@ -1,16 +1,16 @@
 
 import React from 'react';
-import HeaderFour from '@/layouts/headers/HeaderFour';
 import HeroPortfolioDetailsArea from './HeroPortfolioDetailsArea';
 import PortfolioAboutArea from './PortfolioAboutArea';
 import PortfolioDetailsArea from './PortfolioDetailsArea';
 import Footer from '@/layouts/footer/Footer';
+import Header from '@/layouts/header/Header';
 
 
 const PortfolioDetails = () => {
   return (
     <>
-      <HeaderFour style={true} />
+      <Header />
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>

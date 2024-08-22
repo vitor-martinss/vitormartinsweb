@@ -1,19 +1,19 @@
 
 import React from 'react';
-import HeaderNine from '@/layouts/headers/HeaderNine';
 import PortfolioDetailsThreeArea from './PortfolioDetailsThreeArea';
-import FooterFive from '@/layouts/footer/FooterFive';
+import Header from '@/layouts/header/Header';
+import Footer from '@/layouts/footer/Footer';
 
 const PortfolioDetailsThree = () => {
   return (
     <>
-      <HeaderNine />
+      <Header />
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
             <PortfolioDetailsThreeArea />
           </main>
-          <FooterFive />
+          <Footer />
         </div>
       </div>
     </>

@@ -1,7 +1,6 @@
 'use client';
 import Image from "next/image";
 
-import whatsap from "@/assets/img/about/whatsap.png";
 import shape_1 from "@/assets/img/services/shape/services-shape-1.png";
 import shape_2 from "@/assets/img/services/shape/services-shape-2.png"; 
 
