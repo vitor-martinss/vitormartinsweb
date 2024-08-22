@@ -2,9 +2,9 @@
 import React from 'react';
 import Image from 'next/image';
 
-import Logo1 from "@/assets/img/logo/logo.png"
-import Logo2 from "@/assets/img/logo/logo-black.png"
-import logo_white from "@/assets/img/logo/logo-white.png"
+// import Logo1 from "@/assets/img/logo/logo.png"
+// import Logo2 from "@/assets/img/logo/logo-black.png"
+// import logo_white from "@/assets/img/logo/logo-white.png"
 import Shape from "@/assets/img/offcanvas/bg-shape-2.png"
 import MobileMenus from '@/layouts/header/menu/mobile-menus';
 
@@ -25,7 +25,7 @@ const Offcanvas = ({ showCanvas, setShowCanvas, style_bg, style_bg2 }: any) => {
             <div className="tp-offcanvas-left-wrap d-flex justify-content-between align-items-center">
 
               <div className="tpoffcanvas__logo">
-                {style_bg ?
+                {/* {style_bg ?
                   <Image className="logo-white" style={{ height: 'auto' }} src={logo_white} alt="image" />
                   :
                   <>
@@ -33,7 +33,7 @@ const Offcanvas = ({ showCanvas, setShowCanvas, style_bg, style_bg2 }: any) => {
                     <Image className="logo-black" style={{ height: 'auto' }} src={Logo2} alt="image" />
                   </>
 
-                }
+                } */}
               </div>
               <div className="tp-offcanvas-close d-md-none text-end">
 
