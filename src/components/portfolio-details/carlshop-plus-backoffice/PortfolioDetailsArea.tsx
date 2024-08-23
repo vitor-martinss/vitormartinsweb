@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Image, { StaticImageData } from 'next/image';
-import Count from '../common/Count';
+import Count from '@/components/common/Count';;
 
 import portfolio_details_img_1 from "@/assets/img/portfolio/port-details-2.jpg";
 import portfolio_img_1 from "@/assets/img/portfolio/portfolio-details-img.jpg";

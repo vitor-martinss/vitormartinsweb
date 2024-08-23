@@ -1,5 +1,5 @@
 
-import PortfolioDetails from '@/components/portfolio-details';
+import PortfolioDetails from '@/components/portfolio-details/portugal-clinical-trials';
 import Wrapper from '@/layouts/Wrapper';
 import React from 'react';
 

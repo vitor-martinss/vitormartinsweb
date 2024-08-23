@@ -1,5 +1,5 @@
 
-import PortfolioDetails from '@/components/portfolio-details';
+import PortfolioDetails from '@/components/portfolio-details/carlshop-plus-backoffice';
 import Wrapper from '@/layouts/Wrapper';
 import React from 'react';
 
