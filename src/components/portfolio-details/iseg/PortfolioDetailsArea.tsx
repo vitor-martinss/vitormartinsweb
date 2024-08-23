@@ -6,7 +6,7 @@ import portfolio_details_img_1 from "@/assets/img/portfolio/port-details-2.jpg";
 import portfolio_img_1 from "@/assets/img/portfolio/portfolio-details-img.jpg";
 import portfolio_img_2 from "@/assets/img/portfolio/portfolio-details-img-2.jpg";
 import portfolio_img_3 from "@/assets/img/portfolio/portfolio-details-img-3.jpg";
-import Count from '@/components/common/Count';
+import Count from '../../common/Count';
 
 
 
