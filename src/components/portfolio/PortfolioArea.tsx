@@ -17,6 +17,7 @@ interface DataType {
     id: number;
     img: StaticImageData;
     bg_img: string;
+    path: string;
     title: string;
     category: string;
   }[];
@@ -24,6 +25,7 @@ interface DataType {
     id: number;
     img: StaticImageData;
     bg_img: string;
+    path: string;
     title: string;
     category: string;
   }[];
@@ -36,44 +38,130 @@ const project_content: DataType = {
       id: 1,
       img: project_img_1,
       bg_img: '/assets/img/portfolio/port-inner-up-1.jpg',
-      title: 'Space Needle',
-      category: 'Branding',
+      path: '/portfolio/carlshop-plus',
+      title: 'Carlshop Plus',
+      category: 'Ecommerce',
+    },
+    {
+      id: 2,
+      img: project_img_1,
+      bg_img: '/assets/img/portfolio/port-inner-up-1.jpg',
+      path: '/portfolio/ppcoa',
+      title: 'PPCoA - Architecture',
+      category: 'Institutional / Portfolio Website',
+    },
+    {
+      id: 3,
+      img: project_img_2,
+      bg_img: '/assets/img/portfolio/port-inner-up-4.jpg',
+      path: '/portfolio/rovo-agency',
+      title: 'Rovo Agency',
+      category: 'Institutional Website',
     },
     {
       id: 4,
-      img: project_img_2,
-      bg_img: '/assets/img/portfolio/port-inner-up-4.jpg',
-      title: 'Crisis Cleanup',
+      img: project_img_3,
+      bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
+      path: '/portfolio/iseg',
+      title: 'iseg',
       category: 'Branding',
     },
     {
-      id: 1,
+      id: 5,
       img: project_img_3,
       bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
-      title: 'Space Needle',
+      path: '/portfolio/todo-mundo-usa',
+      title: 'Todo Mundo Usa - Portal',
+      category: 'Branding',
+    },
+    {
+      id: 6,
+      img: project_img_3,
+      bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
+      path: '/portfolio/ecoprogresso',
+      title: 'Ecoprogresso',
+      category: 'Branding',
+    },
+    {
+      id: 7,
+      img: project_img_3,
+      bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
+      path: '/portfolio/cnpdpcj-pt',
+      title: 'CNPDPCJ GOV PT',
+      category: 'Branding',
+    },
+    {
+      id: 8,
+      img: project_img_3,
+      bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
+      path: '/portfolio/portugal-digital-week',
+      title: 'portugaldigitalweek',
       category: 'Branding',
     }
   ],
   blog_data_2: [
     {
-      id: 4,
-      img: project_img_4,
-      bg_img: '/assets/img/portfolio/port-inner-up-2.jpg',
-      title: 'Space Needle',
+      id: 9,
+      img: project_img_1,
+      bg_img: '/assets/img/portfolio/port-inner-up-1.jpg',
+      path: '/portfolio/carlshop-plus-backoffice',
+      title: 'Carlshop Plus - Backoffice',
+      category: 'Ecommerce',
+    },
+    {
+      id: 10,
+      img: project_img_3,
+      bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
+      path: '/portfolio/pousadas-da-juventude',
+      title: 'Pousadas da Juventude',
       category: 'Branding',
     },
     {
-      id: 1,
-      img: project_img_5,
-      bg_img: '/assets/img/portfolio/port-inner-up-3.jpg',
-      title: 'Crisis Cleanup',
+      id: 11,
+      img: project_img_3,
+      bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
+      path: '/portfolio/nova-ims',
+      title: 'Nova IMS',
       category: 'Branding',
     },
     {
-      id: 4,
-      img: project_img_6,
-      bg_img: '/assets/img/portfolio/portfolio-2.jpg',
-      title: 'Space Needle',
+      id: 12,
+      img: project_img_3,
+      bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
+      path: '/portfolio/ogma',
+      title: 'Ogma',
+      category: 'Branding',
+    },
+    {
+      id: 13,
+      img: project_img_3,
+      bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
+      path: '/portfolio/pleno',
+      title: 'Pleno',
+      category: 'Branding',
+    },
+    {
+      id: 14,
+      img: project_img_3,
+      bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
+      path: '/portfolio/portugal-clinical-trials',
+      title: 'portugalclinicaltrials',
+      category: 'Branding',
+    },
+    {
+      id: 15,
+      img: project_img_3,
+      bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
+      path: '/portfolio/eusoudigital',
+      title: 'eusoudigital',
+      category: 'Branding',
+    },
+    {
+      id: 16,
+      img: project_img_3,
+      bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
+      path: '/portfolio/portway',
+      title: 'portway',
       category: 'Branding',
     }
   ]
@@ -134,7 +222,7 @@ const PortfolioArea = () => {
               <div className="tp-portfolio-item-wrapper">
                 {blog_data_1.map((item, index) => (
                   <div key={index} className="tp-portfolio-item mb-70">
-                    <Link href="/portfolio-details">
+                    <Link href={item.path}>
                       <div className={`tp-portfolio-thumb img-${item.id} w-img fix`}>
                         <div className="tp-portfolio-thumb-img include-bg d-none"
                           style={{ backgroundImage: `url(${item.bg_img})` }}></div>
@@ -173,7 +261,7 @@ const PortfolioArea = () => {
               <div className="tp-portfolio-item-wrapper">
                 {blog_data_2.map((item, index) => (
                   <div key={index} className="tp-portfolio-item mb-70">
-                    <Link href="/portfolio-details">
+                    <Link href={item.path}>
                       <div className={`tp-portfolio-thumb img-${item.id} w-img fix`}>
                         <div className="tp-portfolio-thumb-img include-bg d-none" style={{ backgroundImage: `url(${item.img})` }}></div>
                         <div className="tp-portfolio-thumb-img">
