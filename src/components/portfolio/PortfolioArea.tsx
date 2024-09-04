@@ -3,7 +3,8 @@ import Link from 'next/link';
 import React, { useEffect } from 'react';
 import Image, { StaticImageData } from 'next/image';
 
-import project_img_1 from '@/assets/img/portfolio/port-inner-up-1.jpg';
+import project_img_cs from '@/assets/img/portfolio-carlshop-plus/banner-carlshop-plus.jpg';
+
 import project_img_2 from '@/assets/img/portfolio/port-inner-up-4.jpg';
 import project_img_3 from '@/assets/img/portfolio/port-inner-up-5.jpg';
 
@@ -36,15 +37,15 @@ const project_content: DataType = {
   blog_data_1: [
     {
       id: 1,
-      img: project_img_1,
-      bg_img: '/assets/img/portfolio/port-inner-up-1.jpg',
+      img: project_img_cs,
+      bg_img: '/assets/img/portfolio-carlshop-plus/banner-carlshop-plus.jpg',
       path: '/portfolio/carlshop-plus',
       title: 'Carlshop Plus',
-      category: 'Ecommerce',
+      category: 'eCommerce',
     },
     {
       id: 2,
-      img: project_img_1,
+      img: project_img_2,
       bg_img: '/assets/img/portfolio/port-inner-up-1.jpg',
       path: '/portfolio/ppcoa',
       title: 'PPCoA - Architecture',
@@ -102,7 +103,7 @@ const project_content: DataType = {
   blog_data_2: [
     {
       id: 9,
-      img: project_img_1,
+      img: project_img_2,
       bg_img: '/assets/img/portfolio/port-inner-up-1.jpg',
       path: '/portfolio/carlshop-plus-backoffice',
       title: 'Carlshop Plus - Backoffice',

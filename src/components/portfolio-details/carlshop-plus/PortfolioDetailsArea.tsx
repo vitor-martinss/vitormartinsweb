@@ -1,12 +1,13 @@
 
 import React from 'react';
 import Image, { StaticImageData } from 'next/image';
-import Count from '../../common/Count';
 
-import portfolio_details_img_1 from "@/assets/img/portfolio/port-details-2.jpg";
-import portfolio_img_1 from "@/assets/img/portfolio/portfolio-details-img.jpg";
-import portfolio_img_2 from "@/assets/img/portfolio/portfolio-details-img-2.jpg";
-import portfolio_img_3 from "@/assets/img/portfolio/portfolio-details-img-3.jpg";
+import portfolio_details_img_1 from "@/assets/img/portfolio-carlshop-plus/banner3-carlshop-plus.jpg";
+import project_img_home from '@/assets/img/portfolio-carlshop-plus/cs+home.gif';
+import project_img_loyalty from '@/assets/img/portfolio-carlshop-plus/cs+loyalty.gif';
+import project_img_search from '@/assets/img/portfolio-carlshop-plus/cs+search.gif';
+import project_img_cart from '@/assets/img/portfolio-carlshop-plus/cs+cart.gif';
+
 
 
 
@@ -22,20 +23,25 @@ interface DataType {
 
 
 const portfolio_detaisl_content: DataType = {
-  title: "The technology that drives some of the best Platforms Out there is nothing without great planning",
+  title: "A B2B eCommerce platform designed to serve global markets, Carls Shop Plus (CS+) facilitates the Carlsberg Group in selling their products to distributors and wholesalers.",
   features: [
-    "Placeat laborum quam.",
-    "Corporis explicabo voluptas exercitationem",
-    "In inventore consequatur autem.",
+    "Personalized Recommendations",
+    "Dynamic Promotions",
+    "Target Groups",
+    "Favorites",
+    "Stock Information",
+    "Cancel Order",
+    "Loyalty Points",
+    "…and many more."
   ],
   counter_data: [
     {
       counter: 120,
-      title: "Months Project Duration",
+      title: "different markets served around the world.",
     },
     {
       counter: 45,
-      title: "Average daily signups",
+      title: "monthly accesses handled",
     },
     {
       counter: 300,
@@ -43,13 +49,14 @@ const portfolio_detaisl_content: DataType = {
     }
   ],
   images: [
-    portfolio_img_1,
-    portfolio_img_2,
-    portfolio_img_3,
+    project_img_home,
+    project_img_search,
+    project_img_loyalty,
+    project_img_cart,
   ]
 }
 
-const { title, features, counter_data, images } = portfolio_detaisl_content
+const { title, features, images } = portfolio_detaisl_content
 
 const PortfolioDetailsArea = () => {
   return (
@@ -83,7 +90,7 @@ const PortfolioDetailsArea = () => {
                 </div>
               </div>
             </div>
-            <div className="porfolio-details__result-box pb-70">
+            {/* <div className="porfolio-details__result-box pb-70">
               <div className="row">
                 <div className="col-xl-5 col-lg-4">
                   <div className="porfolio-details__result-left">
@@ -104,7 +111,7 @@ const PortfolioDetailsArea = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="porfolio-details__thumb-box tp-project-3__area">
               <div className="row">
                 <div className="col-xl-12">
