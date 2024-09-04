@@ -40,7 +40,7 @@ const project_content: DataType = {
       img: project_img_cs,
       bg_img: '/assets/img/portfolio-carlshop-plus/banner-carlshop-plus.jpg',
       path: '/portfolio/carlshop-plus',
-      title: 'Carlshop Plus',
+      title: 'Carls Shop Plus',
       category: 'eCommerce',
     },
     {
@@ -106,8 +106,8 @@ const project_content: DataType = {
       img: project_img_2,
       bg_img: '/assets/img/portfolio/port-inner-up-1.jpg',
       path: '/portfolio/carlshop-plus-backoffice',
-      title: 'Carlshop Plus - Backoffice',
-      category: 'Ecommerce',
+      title: 'Carls Shop Plus - Backoffice',
+      category: 'eCommerce backoffice',
     },
     {
       id: 10,
@@ -283,7 +283,7 @@ const PortfolioArea = () => {
                             </svg>
                           </span>
                           <div className="tp-portfolio-meta-hover">
-                            <span>{item.title}</span>
+                            <span>{item.category}</span>
                             <span className="tp-portfolio-meta-link">View Project</span>
                           </div>
                         </div>
