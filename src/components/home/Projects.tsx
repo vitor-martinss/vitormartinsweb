@@ -4,7 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image, { StaticImageData } from 'next/image';
 
-import project_img_1 from "@/assets/img/portfolio/3/portfolio-1.jpg";
+import project_img_1 from "@/assets/img/portfolio-carlshop-plus/banner2-carlshop-plus.jpg";
 import project_img_2 from "@/assets/img/portfolio/3/portfolio-2.jpg";
 import project_img_3 from "@/assets/img/portfolio/3/portfolio-3.jpg";
 import project_img_4 from "@/assets/img/portfolio/3/portfolio-4.jpg";
@@ -57,7 +57,7 @@ const Projects = () => {
                     }}
                     onMouseMove={(e) => moveText(e, index)} 
                   >
-                    <Link href="/portfolio-details">
+                    <Link href="/portfolio/carlshop-plus">
                       <Image src={img} style={{ height: 'auto' }} alt="image-here" />
                       <span></span>
                       <div className="tp-portfolio-view-btn-3">
