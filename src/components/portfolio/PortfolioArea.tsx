@@ -61,14 +61,6 @@ const project_content: DataType = {
       category: 'Textile & Fashion Industry Website',
     },
     {
-      id: 4,
-      img: project_img_3,
-      bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
-      path: '/portfolio/iseg',
-      title: 'iseg',
-      category: 'Branding',
-    },
-    {
       id: 5,
       img: project_img_3,
       bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
@@ -132,14 +124,6 @@ const project_content: DataType = {
       bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
       path: '/portfolio/ogma',
       title: 'Ogma',
-      category: 'Branding',
-    },
-    {
-      id: 13,
-      img: project_img_3,
-      bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
-      path: '/portfolio/pleno',
-      title: 'Pleno',
       category: 'Branding',
     },
     {
