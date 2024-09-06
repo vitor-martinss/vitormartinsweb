@@ -58,7 +58,7 @@ const project_content: DataType = {
       bg_img: '/assets/img/portfolio/port-inner-up-4.jpg',
       path: '/portfolio/rovo-agency',
       title: 'Rovo Agency',
-      category: 'Institutional Website',
+      category: 'Textile & Fashion Industry Website',
     },
     {
       id: 4,
@@ -72,8 +72,8 @@ const project_content: DataType = {
       id: 5,
       img: project_img_3,
       bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
-      path: '/portfolio/todo-mundo-usa',
-      title: 'Todo Mundo Usa - Portal',
+      path: '/portfolio/nova-ims',
+      title: 'Nova IMS',
       category: 'Branding',
     },
     {
@@ -122,8 +122,8 @@ const project_content: DataType = {
       id: 11,
       img: project_img_3,
       bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
-      path: '/portfolio/nova-ims',
-      title: 'Nova IMS',
+      path: '/portfolio/todo-mundo-usa',
+      title: 'Todo Mundo Usa - Portal',
       category: 'Branding',
     },
     {

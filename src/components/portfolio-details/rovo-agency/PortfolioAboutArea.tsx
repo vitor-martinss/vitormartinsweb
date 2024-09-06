@@ -4,8 +4,12 @@ import React from 'react';
 
 const portfolio_content = {
   subtitle: "ABOUT THE PROJECT",
-  title: "Delivering Better Business News With an Improved User Experience.",
-  description: "Booster is a B2B platform focused on increasing the revenues and overall efficiency of enterprises, whether big or small. The company offers trade analytics, consultations, and other commerce-related services to help businesses convert their visitors into leads.",
+  title: "Seamless Web Experience with Custom Solutions",
+  description: <>
+    Rovo Agency is a leading textile manufacturer in Portugal, collaborating with renowned clients such as Balenciaga, Supreme, Très Bien, and Polar. With a focus on innovation, sustainability, and ethical practices, they push the boundaries of textile sourcing and production, serving over 100 clients in the apparel, fashion, and luxury sectors.
+    <br /><br />
+    The Rovo Agency website was built using Webflow, a platform offering design flexibility but with technical limitations. To overcome these, I developed custom JavaScript solutions, served via a CDN, enabling advanced functionality while retaining Webflow’s core benefits. The goal was to create a Single Page Application (SPA)-like experience within a monolithic architecture, focusing on fluid page transitions and state management.
+  </>,
     
 }
 
@@ -20,18 +24,17 @@ const PortfolioAboutArea = () => {
             <div className="col-xl-5 col-lg-4">
               <div className="porfolio-details__left-info">
                 <div className="porfolio-details__left-content">
-                  <h4 className="porfolio-details__left-info-title">Clients</h4>
-                  <span>The Organic Crave</span>
+                  <h4 className="porfolio-details__left-info-title">Client</h4>
+                  <span>Rovo Agency</span>
                 </div>
                 <div className="porfolio-details__left-content">
                   <h4 className="porfolio-details__left-info-title">Role in project</h4>
-                  <span>UX/UI Design - branding</span>
+                  <span>Front-end Web Developer</span>
                 </div>
                 <div className="porfolio-details__left-content">
                   <h4 className="porfolio-details__left-info-title mb-20">Services</h4>
-                  <span>Branding</span>
-                  <span>Graphic Design</span>
-                  <span>Packaging</span>
+                  <span>Front-end Development</span>
+                  <span>Cross-functional Collaboration</span>
                 </div>
                 <div className="porfolio-details__left-content">
                   <h4 className="porfolio-details__left-info-title">Year</h4>
@@ -47,7 +50,7 @@ const PortfolioAboutArea = () => {
                   <p>{description}</p>
                 </div>
                 <div className="porfolio-details__right-btn">
-                  <a className="tp-btn-border-md" href="#">
+                  <a className="tp-btn-border-md" href="https://www.rovo-agency.de/" target='_blank' rel="noopenner">
                     View Website
 
                     <span>
