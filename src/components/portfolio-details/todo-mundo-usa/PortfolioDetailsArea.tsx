@@ -1,7 +1,6 @@
 
 import React from 'react';
 import Image, { StaticImageData } from 'next/image';
-import Count from '../../common/Count';
 
 import portfolio_details_img_1 from "@/assets/img/portfolio/port-details-2.jpg";
 import portfolio_img_1 from "@/assets/img/portfolio/portfolio-details-img.jpg";
@@ -22,11 +21,11 @@ interface DataType {
 
 
 const portfolio_detaisl_content: DataType = {
-  title: "The technology that drives some of the best Platforms Out there is nothing without great planning",
+  title: "Core features and technologies:",
   features: [
-    "Placeat laborum quam.",
-    "Corporis explicabo voluptas exercitationem",
-    "In inventore consequatur autem.",
+    "Low cost: Static website built with Next.js for cost-effective performance.",
+    "Flat design: Minimalist, mobile-first design focused on delivering a clear and intuitive user experience.",
+    "Fast response, low maintenance: Deployed on Vercel for quick loading times and minimal upkeep.",
   ],
   counter_data: [
     {
@@ -83,7 +82,7 @@ const PortfolioDetailsArea = () => {
                 </div>
               </div>
             </div>
-            <div className="porfolio-details__result-box pb-70">
+            {/* <div className="porfolio-details__result-box pb-70">
               <div className="row">
                 <div className="col-xl-5 col-lg-4">
                   <div className="porfolio-details__result-left">
@@ -104,7 +103,7 @@ const PortfolioDetailsArea = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="porfolio-details__thumb-box tp-project-3__area">
               <div className="row">
                 <div className="col-xl-12">

@@ -124,7 +124,7 @@ const project_content: DataType = {
       bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
       path: '/portfolio/todo-mundo-usa',
       title: 'Todo Mundo Usa - Portal',
-      category: 'Branding',
+      category: 'Shipping and Logistics Information Website',
     },
     {
       id: 12,

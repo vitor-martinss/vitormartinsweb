@@ -4,8 +4,12 @@ import React from 'react';
 
 const portfolio_content = {
   subtitle: "ABOUT THE PROJECT",
-  title: "Delivering Better Business News With an Improved User Experience.",
-  description: "Booster is a B2B platform focused on increasing the revenues and overall efficiency of enterprises, whether big or small. The company offers trade analytics, consultations, and other commerce-related services to help businesses convert their visitors into leads.",
+  title: "Mobile-First Platform for international Shipping Services",
+  description: <>
+    Portal Todo Mundo Usa is a mobile-only platform designed and developed for the Todo Mundo Usa company. The app provides users with all the necessary information on how to purchase products in the USA and have them shipped to Brazil, offering a seamless and informative experience for their customers.
+    <br /><br />
+    As both the design and development, I crafted the visual experience in Adobe Illustrator and built the static version of the platform using Next.js, TypeScript, and SASS. The app was deployed using Vercel, ensuring optimized performance and scalability.
+  </>,
     
 }
 
@@ -20,22 +24,22 @@ const PortfolioAboutArea = () => {
             <div className="col-xl-5 col-lg-4">
               <div className="porfolio-details__left-info">
                 <div className="porfolio-details__left-content">
-                  <h4 className="porfolio-details__left-info-title">Clients</h4>
-                  <span>The Organic Crave</span>
+                  <h4 className="porfolio-details__left-info-title">Client</h4>
+                  <span>Todo Mundo Usa</span>
                 </div>
                 <div className="porfolio-details__left-content">
                   <h4 className="porfolio-details__left-info-title">Role in project</h4>
-                  <span>UX/UI Design - branding</span>
+                  <span>UX/UI Design</span>
+                  <span>Front-end Web Developer</span>
                 </div>
                 <div className="porfolio-details__left-content">
                   <h4 className="porfolio-details__left-info-title mb-20">Services</h4>
-                  <span>Branding</span>
-                  <span>Graphic Design</span>
-                  <span>Packaging</span>
+                  <span>Design the UI</span>
+                  <span>Front-end Development</span>
                 </div>
                 <div className="porfolio-details__left-content">
                   <h4 className="porfolio-details__left-info-title">Year</h4>
-                  <span>2023</span>
+                  <span>2021</span>
                 </div>
               </div>
             </div>
@@ -47,7 +51,7 @@ const PortfolioAboutArea = () => {
                   <p>{description}</p>
                 </div>
                 <div className="porfolio-details__right-btn">
-                  <a className="tp-btn-border-md" href="#">
+                  <a className="tp-btn-border-md" href="https://www.portaltodomundousa.com.br/" target='_blank' rel='noopenner'>
                     View Website
 
                     <span>
