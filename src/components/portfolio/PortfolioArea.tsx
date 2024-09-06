@@ -45,7 +45,7 @@ const project_content: DataType = {
       category: 'eCommerce',
     },
     {
-      id: 2,
+      id: 3,
       img: project_img_ppcoa,
       bg_img: '/assets/img/portfolio/port-inner-up-1.jpg',
       path: '/portfolio/ppcoa',
@@ -53,7 +53,7 @@ const project_content: DataType = {
       category: 'Portfolio Website',
     },
     {
-      id: 3,
+      id: 5,
       img: project_img_2,
       bg_img: '/assets/img/portfolio/port-inner-up-4.jpg',
       path: '/portfolio/rovo-agency',
@@ -61,7 +61,7 @@ const project_content: DataType = {
       category: 'Textile & Fashion Industry Website',
     },
     {
-      id: 5,
+      id: 7,
       img: project_img_3,
       bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
       path: '/portfolio/nova-ims',
@@ -69,7 +69,7 @@ const project_content: DataType = {
       category: 'University & Academic Website',
     },
     {
-      id: 6,
+      id: 9,
       img: project_img_3,
       bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
       path: '/portfolio/ecoprogresso',
@@ -77,7 +77,7 @@ const project_content: DataType = {
       category: 'Branding',
     },
     {
-      id: 7,
+      id: 11,
       img: project_img_3,
       bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
       path: '/portfolio/cnpdpcj-pt',
@@ -85,7 +85,7 @@ const project_content: DataType = {
       category: 'Branding',
     },
     {
-      id: 8,
+      id: 13,
       img: project_img_3,
       bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
       path: '/portfolio/portugal-digital-week',
@@ -95,7 +95,7 @@ const project_content: DataType = {
   ],
   blog_data_2: [
     {
-      id: 9,
+      id: 2,
       img: project_img_2,
       bg_img: '/assets/img/portfolio/port-inner-up-1.jpg',
       path: '/portfolio/carlshop-plus-backoffice',
@@ -103,7 +103,7 @@ const project_content: DataType = {
       category: 'eCommerce backoffice',
     },
     {
-      id: 10,
+      id: 4,
       img: project_img_3,
       bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
       path: '/portfolio/pousadas-da-juventude',
@@ -111,7 +111,7 @@ const project_content: DataType = {
       category: 'Booking Platform & eCommerce',
     },
     {
-      id: 11,
+      id: 6,
       img: project_img_3,
       bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
       path: '/portfolio/todo-mundo-usa',
@@ -119,7 +119,7 @@ const project_content: DataType = {
       category: 'Shipping and Logistics Information Website',
     },
     {
-      id: 12,
+      id: 8,
       img: project_img_3,
       bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
       path: '/portfolio/ogma',
@@ -127,7 +127,7 @@ const project_content: DataType = {
       category: 'Branding',
     },
     {
-      id: 14,
+      id: 10,
       img: project_img_3,
       bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
       path: '/portfolio/portugal-clinical-trials',
@@ -135,7 +135,7 @@ const project_content: DataType = {
       category: 'Branding',
     },
     {
-      id: 15,
+      id: 12,
       img: project_img_3,
       bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
       path: '/portfolio/eusoudigital',
@@ -143,7 +143,7 @@ const project_content: DataType = {
       category: 'Branding',
     },
     {
-      id: 16,
+      id: 14,
       img: project_img_3,
       bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
       path: '/portfolio/portway',
@@ -219,7 +219,7 @@ const PortfolioArea = () => {
                       <div className="tp-portfolio-content">
                         <h3 className="tp-portfolio-title">{item.title}</h3>
                         <div className="tp-portfolio-meta d-flex align-items-center">
-                          <span className="tp-portfolio-meta-count">0{index + 1}</span>
+                          <span className="tp-portfolio-meta-count">0{item.id}</span>
                           <span className="tp-portfolio-meta-arrow">
 
                             <svg width="42" height="13" viewBox="0 0 42 13" fill="none"
@@ -257,7 +257,7 @@ const PortfolioArea = () => {
                       <div className="tp-portfolio-content">
                         <h3 className="tp-portfolio-title">{item.title}</h3>
                         <div className="tp-portfolio-meta d-flex align-items-center">
-                          <span className="tp-portfolio-meta-count">0{index + 1}</span>
+                          <span className="tp-portfolio-meta-count">0{item.id}</span>
                           <span className="tp-portfolio-meta-arrow">
                             <svg width="42" height="13" viewBox="0 0 42 13" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
