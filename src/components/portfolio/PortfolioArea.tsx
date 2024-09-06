@@ -65,8 +65,8 @@ const project_content: DataType = {
       img: project_img_3,
       bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
       path: '/portfolio/nova-ims',
-      title: 'Nova IMS',
-      category: 'Branding',
+      title: 'NOVA IMS',
+      category: 'University & Academic Website',
     },
     {
       id: 6,
@@ -115,7 +115,7 @@ const project_content: DataType = {
       img: project_img_3,
       bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
       path: '/portfolio/todo-mundo-usa',
-      title: 'Todo Mundo Usa - Portal',
+      title: 'Portal Todo Mundo Usa',
       category: 'Shipping and Logistics Information Website',
     },
     {
