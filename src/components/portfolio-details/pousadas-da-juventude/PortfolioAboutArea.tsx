@@ -4,8 +4,14 @@ import React from 'react';
 
 const portfolio_content = {
   subtitle: "ABOUT THE PROJECT",
-  title: "Delivering Better Business News With an Improved User Experience.",
-  description: "Booster is a B2B platform focused on increasing the revenues and overall efficiency of enterprises, whether big or small. The company offers trade analytics, consultations, and other commerce-related services to help businesses convert their visitors into leads.",
+  title: "Dynamic Hostel Search and Booking Platform",
+  description: <>
+    The Pousadas da Juventude website is a monolithic platform built on Umbraco CMS, designed to offer an intuitive and seamless booking experience for users searching for youth hostels across Portugal. I developed the frontend using Vanilla JavaScript, SCSS (following the BEM methodology), and Pug for HTML templating.
+    <br /><br />  
+    One of the standout features of this project is the Pousadas page, where users can easily search for hostels using an interactive map. Integrating the Google Maps API to display hostel locations and enable search functionality was both challenging and rewarding, as it enhanced the user experience and allowed for more dynamic interactions on the platform.
+    <br /><br />  
+    In addition to the main website, I also developed the Pousadas da Juventude shop, offering users a streamlined eCommerce experience for purchasing travel-related products and services.
+  </>,
     
 }
 
@@ -20,22 +26,21 @@ const PortfolioAboutArea = () => {
             <div className="col-xl-5 col-lg-4">
               <div className="porfolio-details__left-info">
                 <div className="porfolio-details__left-content">
-                  <h4 className="porfolio-details__left-info-title">Clients</h4>
-                  <span>The Organic Crave</span>
+                  <h4 className="porfolio-details__left-info-title">Client</h4>
+                  <span>Wy Group</span>
                 </div>
                 <div className="porfolio-details__left-content">
                   <h4 className="porfolio-details__left-info-title">Role in project</h4>
-                  <span>UX/UI Design - branding</span>
+                  <span>Front-end Web Developer</span>
                 </div>
                 <div className="porfolio-details__left-content">
                   <h4 className="porfolio-details__left-info-title mb-20">Services</h4>
-                  <span>Branding</span>
-                  <span>Graphic Design</span>
-                  <span>Packaging</span>
+                  <span>Front-end Development</span>
+                  <span>Cross-functional Collaboration</span>
                 </div>
                 <div className="porfolio-details__left-content">
                   <h4 className="porfolio-details__left-info-title">Year</h4>
-                  <span>2023</span>
+                  <span>2021</span>
                 </div>
               </div>
             </div>
@@ -47,7 +52,7 @@ const PortfolioAboutArea = () => {
                   <p>{description}</p>
                 </div>
                 <div className="porfolio-details__right-btn">
-                  <a className="tp-btn-border-md" href="#">
+                  <a className="tp-btn-border-md" href="https://www.pousadasjuventude.pt/" target='_blank' rel='noopenner'>
                     View Website
 
                     <span>

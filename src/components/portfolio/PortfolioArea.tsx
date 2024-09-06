@@ -50,7 +50,7 @@ const project_content: DataType = {
       bg_img: '/assets/img/portfolio/port-inner-up-1.jpg',
       path: '/portfolio/ppcoa',
       title: 'PPCoA - Architecture Office',
-      category: 'Institutional / Portfolio Website',
+      category: 'Portfolio Website',
     },
     {
       id: 3,
@@ -116,7 +116,7 @@ const project_content: DataType = {
       bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
       path: '/portfolio/pousadas-da-juventude',
       title: 'Pousadas da Juventude',
-      category: 'Branding',
+      category: 'Booking Platform & eCommerce',
     },
     {
       id: 11,
