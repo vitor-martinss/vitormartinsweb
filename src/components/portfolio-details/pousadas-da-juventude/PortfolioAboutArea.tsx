@@ -6,11 +6,11 @@ const portfolio_content = {
   subtitle: "ABOUT THE PROJECT",
   title: "Dynamic Hostel Search and Booking Platform",
   description: <>
-    The Pousadas da Juventude website is a monolithic platform built on Umbraco CMS, designed to offer an intuitive and seamless booking experience for users searching for youth hostels across Portugal. I developed the frontend using Vanilla JavaScript, SCSS (following the BEM methodology), and Pug for HTML templating.
+    The Pousadas de Juventude website is a monolithic platform built on Umbraco CMS, designed to offer an intuitive and seamless booking experience for users searching for youth hostels across Portugal. I developed the frontend using Vanilla JavaScript, SCSS (following the BEM methodology), and Pug for HTML templating.
     <br /><br />  
     One of the standout features of this project is the Pousadas page, where users can easily search for hostels using an interactive map. Integrating the Google Maps API to display hostel locations and enable search functionality was both challenging and rewarding, as it enhanced the user experience and allowed for more dynamic interactions on the platform.
     <br /><br />  
-    In addition to the main website, I also developed the Pousadas da Juventude shop, offering users a streamlined eCommerce experience for purchasing travel-related products and services.
+    In addition to the main website, I also developed the Pousadas de Juventude shop, offering users a streamlined eCommerce experience for purchasing travel-related products and services.
   </>,
     
 }

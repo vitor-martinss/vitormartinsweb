@@ -115,7 +115,7 @@ const project_content: DataType = {
       img: project_img_3,
       bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
       path: '/portfolio/pousadas-da-juventude',
-      title: 'Pousadas da Juventude',
+      title: 'Pousadas de Juventude',
       category: 'Booking Platform & eCommerce',
     },
     {
