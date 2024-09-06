@@ -5,7 +5,7 @@ import React from 'react';
 import Image from 'next/image';
 import { scroller } from 'react-scroll';
 
-import banner_img from "@/assets/img/portfolio/portfolio-details-img.jpg";
+import banner_img from "@/assets/img/portfolio-ppcoa/ppcoa-intro-medium.gif";
 import PortfolioDownArrowIcon from '@/svg/icons/PortfolioDownArrowIcon';
 
 

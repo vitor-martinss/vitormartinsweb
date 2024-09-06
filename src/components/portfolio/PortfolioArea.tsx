@@ -4,6 +4,7 @@ import React, { useEffect } from 'react';
 import Image, { StaticImageData } from 'next/image';
 
 import project_img_cs from '@/assets/img/portfolio-carlshop-plus/banner-carlshop-plus.jpg';
+import project_img_ppcoa from '@/assets/img/portfolio-ppcoa/ppcoa-intro-small.gif';
 
 import project_img_2 from '@/assets/img/portfolio/port-inner-up-4.jpg';
 import project_img_3 from '@/assets/img/portfolio/port-inner-up-5.jpg';
@@ -45,10 +46,10 @@ const project_content: DataType = {
     },
     {
       id: 2,
-      img: project_img_2,
+      img: project_img_ppcoa,
       bg_img: '/assets/img/portfolio/port-inner-up-1.jpg',
       path: '/portfolio/ppcoa',
-      title: 'PPCoA - Architecture',
+      title: 'PPCoA - Architecture Office',
       category: 'Institutional / Portfolio Website',
     },
     {

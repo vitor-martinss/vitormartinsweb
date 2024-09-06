@@ -4,8 +4,14 @@ import React from 'react';
 
 const portfolio_content = {
   subtitle: "ABOUT THE PROJECT",
-  title: "Delivering Better Business News With an Improved User Experience.",
-  description: "Booster is a B2B platform focused on increasing the revenues and overall efficiency of enterprises, whether big or small. The company offers trade analytics, consultations, and other commerce-related services to help businesses convert their visitors into leads.",
+  title: "Building a Dynamic and Scalable Portfolio Website for PPCoA",
+  description: <>
+    PPCoA is an architecture office led by Pedro Oliveira Santos Pinto Correia, a Luso-Angolan architect. The firm focuses on creating spaces that harmonize the relationship between people, space, and architecture, with projects spanning both the public and private sectors.
+    <br /><br />
+    The PPCoA portfolio website was developed using modern web technologies to ensure high performance, flexibility, and a seamless user experience. Built with Next.js for server-side rendering and dynamic routing, and styled with Tailwind CSS, the site delivers speed and responsiveness across all devices. TanStack was integrated for optimized data handling and efficient state management.
+    <br /><br />  
+    To ensure easy content updates and management, the site is fully integrated with Umbraco CMS, allowing the PPCoA team to effortlessly manage and showcase their architectural projects.
+  </>,
     
 }
 
@@ -20,22 +26,22 @@ const PortfolioAboutArea = () => {
             <div className="col-xl-5 col-lg-4">
               <div className="porfolio-details__left-info">
                 <div className="porfolio-details__left-content">
-                  <h4 className="porfolio-details__left-info-title">Clients</h4>
-                  <span>The Organic Crave</span>
+                  <h4 className="porfolio-details__left-info-title">Client</h4>
+                  <span>PPCoA - Architecture office</span>
                 </div>
                 <div className="porfolio-details__left-content">
                   <h4 className="porfolio-details__left-info-title">Role in project</h4>
-                  <span>UX/UI Design - branding</span>
+                  <span>Front-end Web Developer</span>
                 </div>
                 <div className="porfolio-details__left-content">
                   <h4 className="porfolio-details__left-info-title mb-20">Services</h4>
-                  <span>Branding</span>
-                  <span>Graphic Design</span>
-                  <span>Packaging</span>
+                  <span>Front-end Development</span>
+                  <span>Performance Optimization</span>
+                  <span>Cross-functional Collaboration</span>
                 </div>
                 <div className="porfolio-details__left-content">
                   <h4 className="porfolio-details__left-info-title">Year</h4>
-                  <span>2023</span>
+                  <span>2024</span>
                 </div>
               </div>
             </div>
@@ -47,7 +53,7 @@ const PortfolioAboutArea = () => {
                   <p>{description}</p>
                 </div>
                 <div className="porfolio-details__right-btn">
-                  <a className="tp-btn-border-md" href="#">
+                  <a className="tp-btn-border-md" href="http://ppcoa.org/pt/all" target='_blank' rel='noopenner'>
                     View Website
 
                     <span>
