@@ -149,8 +149,8 @@ const project_content: DataType = {
       img: project_img_3,
       bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
       path: '/portfolio/portway',
-      title: 'portway',
-      category: 'Branding',
+      title: 'Portway',
+      category: 'Aviation & Airport Services',
     }
   ]
 }
