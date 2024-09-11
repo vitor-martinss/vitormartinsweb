@@ -133,8 +133,8 @@ const project_content: DataType = {
       img: project_img_3,
       bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
       path: '/portfolio/portugal-clinical-trials',
-      title: 'portugalclinicaltrials',
-      category: 'Branding',
+      title: 'Portugal Clinical Trials',
+      category: 'Healthcare & Clinical Research Website',
     },
     {
       id: 12,
