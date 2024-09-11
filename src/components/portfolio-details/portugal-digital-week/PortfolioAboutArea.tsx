@@ -4,9 +4,12 @@ import React from 'react';
 
 const portfolio_content = {
   subtitle: "ABOUT THE PROJECT",
-  title: "Delivering Better Business News With an Improved User Experience.",
-  description: "Booster is a B2B platform focused on increasing the revenues and overall efficiency of enterprises, whether big or small. The company offers trade analytics, consultations, and other commerce-related services to help businesses convert their visitors into leads.",
-    
+  title: "Event Platform for Digital Innovation",
+  description: <>
+  Portugal Digital Week is a national event that promotes digital transformation, innovation, and the adoption of new technologies across industries. The event brings together experts, businesses, and the public to discuss and explore digital strategies that can enhance productivity and economic growth.
+  <br /><br />
+  As part of a development team, I contributed to building the Portugal Digital Week website, which serves as the central platform for event registration, information, and scheduling. The platform was built using a monolithic architecture, with Umbraco CMS managing the dynamic content. The frontend was developed using Vanilla JavaScript, SCSS (with BEM methodology for organized styling), and Pug for HTML templating, ensuring a responsive and informative user experience.
+  </>,
 }
 
 const { subtitle, title, description } = portfolio_content
@@ -20,22 +23,21 @@ const PortfolioAboutArea = () => {
             <div className="col-xl-5 col-lg-4">
               <div className="porfolio-details__left-info">
                 <div className="porfolio-details__left-content">
-                  <h4 className="porfolio-details__left-info-title">Clients</h4>
-                  <span>The Organic Crave</span>
+                  <h4 className="porfolio-details__left-info-title">Client</h4>
+                  <span>Wy Group</span>
                 </div>
                 <div className="porfolio-details__left-content">
                   <h4 className="porfolio-details__left-info-title">Role in project</h4>
-                  <span>UX/UI Design - branding</span>
+                  <span>Front-end Web Developer</span>
                 </div>
                 <div className="porfolio-details__left-content">
                   <h4 className="porfolio-details__left-info-title mb-20">Services</h4>
-                  <span>Branding</span>
-                  <span>Graphic Design</span>
-                  <span>Packaging</span>
+                  <span>Front-end Development</span>
+                  <span>Cross-functional Collaboration</span>
                 </div>
                 <div className="porfolio-details__left-content">
                   <h4 className="porfolio-details__left-info-title">Year</h4>
-                  <span>2023</span>
+                  <span>2021</span>
                 </div>
               </div>
             </div>
@@ -47,9 +49,8 @@ const PortfolioAboutArea = () => {
                   <p>{description}</p>
                 </div>
                 <div className="porfolio-details__right-btn">
-                  <a className="tp-btn-border-md" href="#">
-                    View Website
-
+                <a className="tp-btn-border-md" href="https://www.portugaldigitalweek.pt/" target='_blank' rel="noopenner">                    
+                  View Website
                     <span>
                       <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 10L10 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

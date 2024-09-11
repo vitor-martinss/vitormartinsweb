@@ -91,8 +91,8 @@ const project_content: DataType = {
       img: project_img_3,
       bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
       path: '/portfolio/portugal-digital-week',
-      title: 'portugaldigitalweek',
-      category: 'Branding',
+      title: 'Portugal Digital Week',
+      category: 'Technology & Innovation Conference Website',
     }
   ],
   blog_data_2: [
