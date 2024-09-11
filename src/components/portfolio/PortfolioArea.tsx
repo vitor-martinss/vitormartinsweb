@@ -5,6 +5,8 @@ import Image, { StaticImageData } from 'next/image';
 
 import project_img_cs from '@/assets/img/portfolio-carlshop-plus/banner-carlshop-plus.jpg';
 import project_img_ppcoa from '@/assets/img/portfolio-ppcoa/ppcoa-intro-small.gif';
+import project_img_pousada from '@/assets/img/portfolio-pousada/pousada-website.gif';
+import project_img_ogma from '@/assets/img/portfolio-ogma/ogma.jpg';
 
 import project_img_2 from '@/assets/img/portfolio/port-inner-up-4.jpg';
 import project_img_3 from '@/assets/img/portfolio/port-inner-up-5.jpg';
@@ -104,7 +106,7 @@ const project_content: DataType = {
     },
     {
       id: 4,
-      img: project_img_3,
+      img: project_img_pousada,
       bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
       path: '/portfolio/pousadas-da-juventude',
       title: 'Pousadas de Juventude',
@@ -120,7 +122,7 @@ const project_content: DataType = {
     },
     {
       id: 8,
-      img: project_img_3,
+      img: project_img_ogma,
       bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
       path: '/portfolio/ogma',
       title: 'Ogma',

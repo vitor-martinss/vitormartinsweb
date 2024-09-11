@@ -4,8 +4,12 @@ import React from 'react';
 
 const portfolio_content = {
   subtitle: "ABOUT THE PROJECT",
-  title: "Delivering Better Business News With an Improved User Experience.",
-  description: "Booster is a B2B platform focused on increasing the revenues and overall efficiency of enterprises, whether big or small. The company offers trade analytics, consultations, and other commerce-related services to help businesses convert their visitors into leads.",
+  title: "Institutional Website for Aerospace Services",
+  description: <>
+    As part of a team of developers, I contributed to the development of a responsive and scalable website for OGMA, a leading company in Maintenance, Repair, and Overhaul (MRO) services for aircraft and engines. The site was designed to showcase OGMA’s services, expertise, and team, while ensuring a seamless user experience for a global audience.
+    <br /><br />
+    The website was built on a monolithic architecture using Umbraco CMS for content management. The frontend was developed with Vanilla JavaScript, SCSS (utilizing the BEM methodology), and Pug for HTML templating. This approach ensured consistency, maintainability, and a responsive user experience across the platform.
+  </>,
     
 }
 
@@ -21,21 +25,20 @@ const PortfolioAboutArea = () => {
               <div className="porfolio-details__left-info">
                 <div className="porfolio-details__left-content">
                   <h4 className="porfolio-details__left-info-title">Clients</h4>
-                  <span>The Organic Crave</span>
+                  <span>Wy Group</span>
                 </div>
                 <div className="porfolio-details__left-content">
                   <h4 className="porfolio-details__left-info-title">Role in project</h4>
-                  <span>UX/UI Design - branding</span>
+                  <span>Front-end Web Developer</span>
                 </div>
                 <div className="porfolio-details__left-content">
                   <h4 className="porfolio-details__left-info-title mb-20">Services</h4>
-                  <span>Branding</span>
-                  <span>Graphic Design</span>
-                  <span>Packaging</span>
+                  <span>Front-end Development</span>
+                  <span>Cross-functional Collaboration</span>
                 </div>
                 <div className="porfolio-details__left-content">
                   <h4 className="porfolio-details__left-info-title">Year</h4>
-                  <span>2023</span>
+                  <span>2020</span>
                 </div>
               </div>
             </div>
@@ -47,16 +50,14 @@ const PortfolioAboutArea = () => {
                   <p>{description}</p>
                 </div>
                 <div className="porfolio-details__right-btn">
-                  <a className="tp-btn-border-md" href="#">
+                <a className="tp-btn-border-md" href="https://www.ogma.pt/pt/" target='_blank' rel="noopenner">
                     View Website
-
                     <span>
                       <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 10L10 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                         <path d="M1 1H10V10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
                     </span>
-
                   </a>
                 </div>
               </div>
