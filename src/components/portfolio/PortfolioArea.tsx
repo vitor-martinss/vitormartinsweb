@@ -141,8 +141,8 @@ const project_content: DataType = {
       img: project_img_3,
       bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
       path: '/portfolio/eusoudigital',
-      title: 'eusoudigital',
-      category: 'Branding',
+      title: 'Eu Sou Digital',
+      category: 'Digital Literacy & Education Platform',
     },
     {
       id: 14,

@@ -1,7 +1,6 @@
 
 import React from 'react';
 import Image, { StaticImageData } from 'next/image';
-import Count from '../../common/Count';
 
 import portfolio_details_img_1 from "@/assets/img/portfolio/port-details-2.jpg";
 import portfolio_img_1 from "@/assets/img/portfolio/portfolio-details-img.jpg";
@@ -22,11 +21,13 @@ interface DataType {
 
 
 const portfolio_detaisl_content: DataType = {
-  title: "The technology that drives some of the best Platforms Out there is nothing without great planning",
+  title: "The platform's monolithic architecture and modern front-end technologies ensure fast load times and dynamic functionality. Key technologies and features include:",
   features: [
-    "Placeat laborum quam.",
-    "Corporis explicabo voluptas exercitationem",
-    "In inventore consequatur autem.",
+    "Monolithic architecture using Umbraco CMS for content management.",
+    "Vanilla JavaScript for an interactive and responsive frontend.",
+    "SCSS with BEM methodology for structured and maintainable styling.",
+    "Pug for efficient HTML templating and development.",
+    "Interactive Quiz with multiple-choice questions."
   ],
   counter_data: [
     {
@@ -83,7 +84,7 @@ const PortfolioDetailsArea = () => {
                 </div>
               </div>
             </div>
-            <div className="porfolio-details__result-box pb-70">
+            {/* <div className="porfolio-details__result-box pb-70">
               <div className="row">
                 <div className="col-xl-5 col-lg-4">
                   <div className="porfolio-details__result-left">
@@ -104,7 +105,7 @@ const PortfolioDetailsArea = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="porfolio-details__thumb-box tp-project-3__area">
               <div className="row">
                 <div className="col-xl-12">
