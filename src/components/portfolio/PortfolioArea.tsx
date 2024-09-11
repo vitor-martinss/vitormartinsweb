@@ -76,7 +76,7 @@ const project_content: DataType = {
       bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
       path: '/portfolio/ecoprogresso',
       title: 'Ecoprogresso',
-      category: 'Branding',
+      category: 'Sustainability & Consulting Website',
     },
     {
       id: 11,
@@ -126,7 +126,7 @@ const project_content: DataType = {
       bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
       path: '/portfolio/ogma',
       title: 'Ogma',
-      category: 'Branding',
+      category: 'Institutional Website',
     },
     {
       id: 10,
