@@ -52,7 +52,7 @@ const HeroAreaAbout = () => {
                 <h3 className="ab-hero__title tp-char-animation">I'm <br /> Vitor Martins</h3>
               </div>
               <div className="ab-hero__btn-box">
-                <a className="tp-btn-border-sm" href="assets/img/cv/mycv.docx">
+                <a className="tp-btn-border-sm" target='_blank' rel='noopeener' href="assets/img/cv/mycv.pdf">
                   Download CV
                   <span>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
