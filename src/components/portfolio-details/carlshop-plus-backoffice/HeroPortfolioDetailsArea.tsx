@@ -5,7 +5,7 @@ import React from 'react';
 import Image from 'next/image';
 import { scroller } from 'react-scroll';
 
-import banner_img from "@/assets/img/portfolio/portfolio-details-img.jpg";
+import banner_img from "@/assets/img/portfolio-backoffice/backoffice-single.jpg";
 import PortfolioDownArrowIcon from '@/svg/icons/PortfolioDownArrowIcon';
 
 
@@ -19,19 +19,17 @@ const scrollTo = () => {
 
 const HeroPortfolioDetailsArea = ({ style }: any) => {
   return (
-    <>
-      <div className="porfolio-details__area porfolio-details__color-customize p-relative smooth">
-        <a className='pointer' onClick={scrollTo}>
-          <div className="tp-hero-3__scrool-down z-index-5">
-            <span className="text">Scroll</span> 
-            <PortfolioDownArrowIcon />
-          </div>
-        </a>
-        <div className="porfolio-details__hero-img">
-          <Image data-speed="1.1" src={banner_img} alt="image-here" />
+    <div className="porfolio-details__area porfolio-details__color-customize p-relative smooth">
+      <a className='pointer' onClick={scrollTo}>
+        <div className="tp-hero-3__scrool-down z-index-5">
+          <span className="text">Scroll</span> 
+          <PortfolioDownArrowIcon />
         </div>
+      </a>
+      <div className="porfolio-details__hero-img">
+        <Image data-speed="1.1" src={banner_img} alt="image-here" />
       </div>
-    </>
+    </div>
   );
 };
 

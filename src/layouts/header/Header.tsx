@@ -95,8 +95,8 @@ const Header = () => {
             <div className="row align-items-center">
               <div className="col-xl-6 col-lg-6 col-md-6 col-6">
                 <div className="tp-header-3__logo">
-                  <Link className="logo-white" href="/"><p>VM</p></Link>
-                  <Link className="logo-black" href="/"><p>VM</p></Link>
+                  <Link className="logo-white tp-header-3__logo-text" href="/"><p>VM</p></Link>
+                  <Link className="logo-black tp-header-3__logo-text" href="/"><p>VM</p></Link>
                 </div>
               </div>
               <div className="col-xl-6 d-none">
@@ -192,8 +192,8 @@ const Header = () => {
             <div className="row align-items-center">
               <div className="col-xl-6 col-lg-6 col-md-6 col-6">
                 <div className="tp-header-3__logo">
-                  <Link className="logo-white" href="/">VM</Link>
-                  <Link className="logo-black" href="/">VM</Link>
+                  <Link className="logo-white tp-header-3__logo-text" href="/"><p>VM</p></Link>
+                  <Link className="logo-black tp-header-3__logo-text" href="/"><p>VM</p></Link>
                 </div>
               </div>
               <div className="col-xl-6 d-none">

@@ -2,10 +2,10 @@
 import React from 'react';
 import Image, { StaticImageData } from 'next/image';
 
-import portfolio_details_img_1 from "@/assets/img/portfolio/port-details-2.jpg";
-import portfolio_img_1 from "@/assets/img/portfolio/portfolio-details-img.jpg";
-import portfolio_img_2 from "@/assets/img/portfolio/portfolio-details-img-2.jpg";
-import portfolio_img_3 from "@/assets/img/portfolio/portfolio-details-img-3.jpg";
+import portfolio_details_img_1 from "@/assets/img/portfolio-rovo/rovo-main.jpg";
+import portfolio_img_1 from "@/assets/img/portfolio-rovo/rovo-carousel.jpg";
+import portfolio_img_2 from "@/assets/img/portfolio-rovo/rovo-hero.jpg";
+import portfolio_img_3 from "@/assets/img/portfolio-rovo/rovo-multiple.jpg";
 
 
 
@@ -59,7 +59,7 @@ const PortfolioDetailsArea = () => {
           <div className="row">
             <div className="col-xl-12">
               <div className="porfolio-details__overview-thumb mb-100">
-                <Image data-speed="0.6" src={portfolio_details_img_1} style={{ height: 'auto' }} alt="image-here" />
+                <Image data-speed="0.6" src={portfolio_details_img_1} style={{ height: '100%', objectFit: 'cover' }} alt="image-here" />
               </div>
             </div>
             <div className="porfolio-details__overview-box mt-120 pb-135">
@@ -113,7 +113,7 @@ const PortfolioDetailsArea = () => {
                     {images.map((item, index) => (
                       <div key={index} className="tp-portfolio-item-3 portfolio-panel pb-80 tp-hover-reveal-text">
                         <a href="#">
-                          <Image src={item} style={{ height: 'auto' }} alt="image-here" />
+                          <Image src={item} style={{ height: '100%', objectFit: 'cover' }} alt="image-here" />
                           <span></span>
                         </a>
                       </div>
@@ -123,7 +123,7 @@ const PortfolioDetailsArea = () => {
                 </div>
               </div>
             </div>
-            <div className="porfolio-details__navigation-wrap pb-125">
+            {/* <div className="porfolio-details__navigation-wrap pb-125">
               <div className="row align-items-center">
                 <div className="col-xl-4 col-lg-4 col-md-4 col-12">
                   <div className="porfolio-details__navigation-content text-center text-md-start">
@@ -159,7 +159,7 @@ const PortfolioDetailsArea = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

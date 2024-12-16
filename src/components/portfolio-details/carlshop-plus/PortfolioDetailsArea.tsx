@@ -130,16 +130,16 @@ const PortfolioDetailsArea = () => {
                 </div>
               </div>
             </div>
-            <div className="porfolio-details__navigation-wrap pb-125">
+            {/* <div className="porfolio-details__navigation-wrap pb-125">
               <div className="row align-items-center">
                 <div className="col-xl-4 col-lg-4 col-md-4 col-12">
                   <div className="porfolio-details__navigation-content text-center text-md-start">
-                    <a href="#">
+                    <a href="/portfolio/rovo-agency">
                       <i className="fa-regular fa-arrow-left"></i>
                       <span>Preview</span>
                     </a>
                     <h4>
-                      Crisis Cleanup
+                      Rovo Agency
                     </h4>
                   </div>
                 </div>
@@ -166,7 +166,7 @@ const PortfolioDetailsArea = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
