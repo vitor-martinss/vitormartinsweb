@@ -39,16 +39,40 @@ const ContactForm = () => {
 
 
   const { register, handleSubmit, reset, formState: { errors }, } = useForm<FormData>({ resolver: yupResolver(schema), });
-  const onSubmit = (data: FormData) => {
-    const notify = () => toast("Message send successful");
-    notify();
-    setIsFocused(false);
-    setIsFocused2(false);
-    setIsFocused3(false);
-    setIsFocused4(false); 
-    
-    reset();
-    console.log(data);
+  
+  const onSubmit = async (data: FormData) => {
+    const notifySuccess = () => toast.success("Message sent successfully");
+    const notifyError = (msg: string) => toast.error(`Error: ${msg}`);
+
+    const formData = new FormData();
+    formData.append("access_key", "1f241948-b16a-4ba8-95b2-4c3b9972b9b2");
+    formData.append("name", data.name);
+    formData.append("email", data.email);
+    formData.append("company", data.company);
+    formData.append("message", data.message);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const responseData = await response.json();
+
+      if (responseData.success) {
+        notifySuccess();
+        reset();
+        setIsFocused(false);
+        setIsFocused2(false);
+        setIsFocused3(false);
+        setIsFocused4(false);
+      } else {
+        notifyError(responseData.message);
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      notifyError("Something went wrong!");
+    }
   };
 
 
@@ -96,77 +120,75 @@ const ContactForm = () => {
 
 
   return (
-    <>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="contact-inner__wrapper">
-          <div className="postbox__comment-form">
-            <h3 className="contact-inner__form-title">Request A Quote</h3>
-            <div className="row gx-20">
-              <div className="col-xxl-6 col-xl-6 col-lg-6">
-                <div className="postbox__comment-input mb-35">
-                  <input type="text" className="inputText" {...register("name")} onFocus={handleFocus} onBlur={handleBlur} />
-                  <span className={`floating-label ${isFocused ? 'floating-label-floated' : ''}`}>Your  Name</span>
-                  <p className="form_error">{errors.name?.message}</p>
-                </div>
-              </div>
-              <div className="col-xxl-6 col-xl-6 col-lg-6">
-                <div className="postbox__comment-input mb-35">
-                  <input type="text" className="inputText" {...register("company")} onFocus={handleFocus2} onBlur={handleBlur2} />
-                  <span className={`floating-label ${isFocused2 ? 'floating-label-floated' : ''}`}>Company</span>
-                  <p className="form_error">{errors.company?.message}</p>
-                </div>
-              </div>
-              <div className="col-xxl-12">
-                <div className="postbox__comment-input mb-35">
-                  <input type="text" className="inputText" {...register("email")} onFocus={handleFocus3} onBlur={handleBlur3} />
-                  <span className={`floating-label ${isFocused3 ? 'floating-label-floated' : ''}`}>Your Email</span>
-                  <p className="form_error">{errors.email?.message}</p>
-                </div>
-              </div>
-              <div className="col-xxl-12">
-                <div className="postbox__comment-input mb-20">
-                  <textarea className="textareaText" {...register("message")} onFocus={handleFocus4} onBlur={handleBlur4}></textarea>
-                  <span className={`floating-label-2 ${isFocused4 ? 'floating-label-floated' : ''}`}>Your Comment</span>
-                  <p className="form_error">{errors.message?.message}</p>
-                </div>
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <div className="contact-inner__wrapper">
+        <div className="postbox__comment-form">
+          <h3 className="contact-inner__form-title">Request A Quote</h3>
+          <div className="row gx-20">
+            <div className="col-xxl-6 col-xl-6 col-lg-6">
+              <div className="postbox__comment-input mb-35">
+                <input type="text" className="inputText" {...register("name")} onFocus={handleFocus} onBlur={handleBlur} />
+                <span className={`floating-label ${isFocused ? 'floating-label-floated' : ''}`}>Your  Name</span>
+                <p className="form_error">{errors.name?.message}</p>
               </div>
             </div>
-          </div>
-          <div className="row">
-            <div className="col-xl-12">
-              <div className="contact-inner__category mb-45">
-                <h4 className="contact-inner__category-title">Project budget (EUR)</h4>
-                <div className="contact-inner__category-wrapper">
-
-                  {budget_categorys.map((item, index) => (
-                    <label key={index} htmlFor={item.id}
-                      onClick={() => handleItemClick(index)}
-                      className={`contact-budget-btn ${activeCategory === index ? 'active' : ''}`}
-                    >{item.title}</label>
-                  ))}
-
-                  {budget_categorys.map((item, index) => (
-                    <input key={index} type="radio" name="contact_budget" id={item.id} />
-                  ))}
-
-                </div>
+            <div className="col-xxl-6 col-xl-6 col-lg-6">
+              <div className="postbox__comment-input mb-35">
+                <input type="text" className="inputText" {...register("company")} onFocus={handleFocus2} onBlur={handleBlur2} />
+                <span className={`floating-label ${isFocused2 ? 'floating-label-floated' : ''}`}>Company</span>
+                <p className="form_error">{errors.company?.message}</p>
               </div>
             </div>
-          </div>
-          <div className="row">
             <div className="col-xxl-12">
-              <div className="postbox__comment-btn">
-                <button type="submit" className="tp-btn-grey-lg">
-                  <span>
-                    <i>Send Message</i>
-                  </span>
-                </button>
+              <div className="postbox__comment-input mb-35">
+                <input type="text" className="inputText" {...register("email")} onFocus={handleFocus3} onBlur={handleBlur3} />
+                <span className={`floating-label ${isFocused3 ? 'floating-label-floated' : ''}`}>Your Email</span>
+                <p className="form_error">{errors.email?.message}</p>
+              </div>
+            </div>
+            <div className="col-xxl-12">
+              <div className="postbox__comment-input mb-20">
+                <textarea className="textareaText" {...register("message")} onFocus={handleFocus4} onBlur={handleBlur4}></textarea>
+                <span className={`floating-label-2 ${isFocused4 ? 'floating-label-floated' : ''}`}>Your Comment</span>
+                <p className="form_error">{errors.message?.message}</p>
               </div>
             </div>
           </div>
         </div>
-      </form>
-    </>
+        <div className="row">
+          <div className="col-xl-12">
+            <div className="contact-inner__category mb-45">
+              <h4 className="contact-inner__category-title">Project budget (EUR)</h4>
+              <div className="contact-inner__category-wrapper">
+
+                {budget_categorys.map((item, index) => (
+                  <label key={index} htmlFor={item.id}
+                    onClick={() => handleItemClick(index)}
+                    className={`contact-budget-btn ${activeCategory === index ? 'active' : ''}`}
+                  >{item.title}</label>
+                ))}
+
+                {budget_categorys.map((item, index) => (
+                  <input key={index} type="radio" name="contact_budget" id={item.id} />
+                ))}
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-xxl-12">
+            <div className="postbox__comment-btn">
+              <button type="submit" className="tp-btn-grey-lg">
+                <span>
+                  <i>Send Message</i>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
   );
 };
 
